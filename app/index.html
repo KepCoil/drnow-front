@@ -1,13 +1,20 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru-RU">
 <head>
-	<meta charset="UTF-8">
+	<meta charset="UTF-8" />
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<title>drnow</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
 
-
-	<link rel="stylesheet" href="libs/bootstrap/dist/css/bootstrap.min.css">
-	<link rel="stylesheet" href="css/main.concat.css">
-
+	<meta name="description" content="" />
+	<meta name="keywords" content=""/>
+	
+	<link href="https://fonts.googleapis.com/css?family=Roboto:400,400i,500,700&amp;subset=cyrillic" rel="stylesheet" />
+	<link href="libs/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
+	<link rel="stylesheet" href="libs/fontawesome/css/all.min.css" />
+	<link href="libs/OwlCarousel/dist/assets/owl.carousel.min.css" rel="stylesheet" />
+	<link href="css/main.concat.css" rel="stylesheet" />
 </head>
 <body>
 
@@ -18,46 +25,42 @@
 
 		<main id="main-header">
 
-			<section class="preview">
+			<section class="home-sect preview">
 
 				<div class="preview__slider">
-
-					<div id="js-main-slider" class="main-slider carousel slide" data-ride="carousel">
-
-						<div class="carousel-inner main-slider__content">
-							<div class="carousel-item active main-slider__slide">
-								<div class="main-slider__slide-img" style="background-image: url('img/test/slider/slider1.jpg');"></div>
-							</div>
-							<div class="carousel-item">
-								<div class="main-slider__slide-img" style="background-image: url('img/test/slider/slider2.jpg');"></div>
-							</div>
-							<div class="carousel-item">
-								<div class="main-slider__slide-img" style="background-image: url('img/test/slider/slider3.jpg');"></div>
+					<div id="js-main-slider" class="main-slider owl-carousel">
+						<div class="main-slider__slide">
+							<div class="main-slider__slide-img" style="background-image: url('img/test/slider/slider1.jpg');"></div>
+							<div class="main-slider__slide-content">
+								<h3 class="main-slider__slide-content-title">Медицинские консультации онлайн</h3>
+								<a class="btn btn-danger btn-lg" href="#">Подробнее</a>
 							</div>
 						</div>
-
-						<div class="carousel-control carousel-control-active">
-							<a class="carousel-control-prev" href="#js-main-slider" role="button" data-slide="prev">
-								<span class="carousel-control-prev-icon" aria-hidden="true"></span>
-								<!-- <span class="sr-only">Previous</span> -->
-							</a>
-							<a class="carousel-control-next" href="#js-main-slider" role="button" data-slide="next">
-								<span class="carousel-control-next-icon" aria-hidden="true"></span>
-								<!-- <span class="sr-only">Next</span> -->
-							</a>
+						<div class="main-slider__slide">
+							<div class="main-slider__slide-img" style="background-image: url('img/test/slider/slider2.jpg');"></div>
+							<div class="main-slider__slide-content">
+								<h3 class="main-slider__slide-content-title">Медицинские консультации онлайн</h3>
+								<a class="btn btn-danger btn-lg" href="#">Подробнее</a>
+							</div>
 						</div>
-						
+						<div class="main-slider__slide">
+							<div class="main-slider__slide-img" style="background-image: url('img/test/slider/slider3.jpg');"></div>
+							<div class="main-slider__slide-content">
+								<h3 class="main-slider__slide-content-title">Медицинские консультации онлайн</h3>
+								<a class="btn btn-danger btn-lg" href="#">Подробнее</a>
+							</div>
+						</div>
 					</div>
-
 				</div>
 
 
 				<div class="preview__small-info">
-					<div class="small-info">
-						<div class="container">
-							<div class="row">
+					<div class="container">
+						<div class="small-info">
 
-								<div class="col-md-4">
+							<div class="small-info__row row">
+
+								<div class="small-info__col col-md-4">
 									<div class="small-info__item">
 										<h4 class="small-info__item-title">
 											<span class="small-info__item-title-text">Дежурный врач</span>
@@ -67,7 +70,7 @@
 									</div>
 								</div>
 
-								<div class="col-md-4">
+								<div class="small-info__col col-md-4">
 									<div class="small-info__item">
 										<h4 class="small-info__item-title">
 											<span class="small-info__item-title-text">Плановая консультация</span>
@@ -77,7 +80,7 @@
 									</div>
 								</div>
 
-								<div class="col-md-4">
+								<div class="small-info__col col-md-4">
 									<div class="small-info__item">
 										<h4 class="small-info__item-title">
 											<span class="small-info__item-title-text">Написать врачу</span>
@@ -93,16 +96,107 @@
 				</div>
 
 			</section>
+			
+
+
+			<section class="home-sect promo">
+				<div class="container">
+				
+					<div class="promo__item promo__item-left">
+						<div class="promo__item-inner">
+							<div class="row align-items-center">
+								<div class="col-md-3 promo__item-col">
+									<div class="promo__wrap-img">
+										<img class="promo__img img-fluid" src="img/test/promo/promo1.png" alt="">
+									</div>
+								</div>
+								<div class="col-md-9 promo__item-col">
+									<div class="promo__content">
+										<h3 class="promo__content-title">По телефону</h3>
+										<div class="promo__content-text">Экстренная медицинская помощь терапевта или педиатра. При возникновении острой ситуации со здоровьем квалифицированный врач по телефону сможет принять правильную тактику лечения, назначить необходимую терапию или (при необходимости) направить Вас в больницу. Время работы с 8:00 до 22:00 московского времени. </div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					
+					<div class="promo__item promo__item-right">
+						<div class="promo__item-inner">
+							<div class="row align-items-center">
+								<div class="col-md-3 order-2 promo__item-col">
+									<div class="promo__wrap-img">
+										<img class="promo__img img-fluid" src="img/test/promo/promo2.png" alt="">
+									</div>
+								</div>
+								<div class="col-md-9 order-1 promo__item-col">
+									<div class="promo__content">
+										<h3 class="promo__content-title">По интернету</h3>
+										<div class="promo__content-text">Прием врача осуществляется по предварительной записи через интернет по видеосвязи. Вы можете обсудить с доктором Ваши жалобы, историю болезни, Ваши обследования и заключения других специалистов. После консультации доктор выдает Вам рекомендации в устной форме и высылает Вам заключение на электронный адрес.</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="promo__item  promo__item-left">
+						<div class="promo__item-inner">
+							<div class="row align-items-center">
+								<div class="col-md-3 promo__item-col">
+									<div class="promo__wrap-img">
+										<img class="promo__img img-fluid" src="img/test/promo/promo3.png" alt="">
+									</div>
+								</div>
+								<div class="col-md-9 promo__item-col">
+									<div class="promo__content">
+										<h3 class="promo__content-title">Написать Врачу</h3>
+										<div class="promo__content-text">Вы можете написать письмо врачу со своими жалобами и вопросами. Также Вы можете отправить Ваши обследования и заключения других специалистов. В течение суток доктор Вам ответит и Вы получите исчерпывающую информацию с рекомендациями и лечением.</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+				</div>
+			</section>
+
+
+			<section class="home-sect path-arrows">
+				<div class="container">
+					<h2 class="home-sect__main-title">Любимый доктор рядом и сейчас</h2>
+
+					<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 291.01178 129" height="129" width="291.01178" version="1.1" id="tc-svg-0">
+						<path id="path4138" d="M 3.4644996,126.28999 3.1137219,4.0613763 l 240.7182181,0 43.11847,58.7692707 -43.28202,63.461773 z" style="fill: #dc3545; fill-opacity: 1; stroke-opacity: 0; stroke: rgb(243, 159, 24); stroke-width: 5px; transition: fill-opacity 1s ease 0s, stroke-opacity 1s ease 0s; stroke-dasharray: 752.858, 752.858; stroke-dashoffset: 0;"></path>
+					</svg>
+
+					<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 291.01178 129" height="129" width="291.01178" version="1.1" id="tc-svg-1">
+						<path id="path4138-1" d="M 3.3821314,126.02828 46.475601,62.999427 3.0313514,3.799673 l 240.7182186,0 43.11847,58.769271 -43.28202,63.461766 z" style="fill: #dc3545; fill-opacity: 1; stroke-opacity: 0; stroke: rgb(243, 159, 24); stroke-width: 5px; transition: fill-opacity 1s ease 0s, stroke-opacity 1s ease 0s; stroke-dasharray: 780.412, 780.412; stroke-dashoffset: 0;"></path>
+					</svg>
+
+					<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 291.01178 129" height="129" width="291.01178" version="1.1" id="tc-svg-1">
+						<path id="path4138-1" d="M 3.3821314,126.02828 46.475601,62.999427 3.0313514,3.799673 l 240.7182186,0 43.11847,58.769271 -43.28202,63.461766 z" style="fill: #dc3545; fill-opacity: 1; stroke-opacity: 0; stroke: rgb(243, 159, 24); stroke-width: 5px; transition: fill-opacity 1s ease 0s, stroke-opacity 1s ease 0s; stroke-dasharray: 780.412, 780.412; stroke-dashoffset: 0;"></path>
+					</svg>
+				</div>
+			</section>
+
+
+			<section class="home-sect home-sect-grey key-doctors">
+				<div class="container">
+					<h2 class="home-sect__main-title">Ведущие врачи</h2>
+
+					
+				</div>
+			</section>
 
 		</main>
+
 
 		<footer id="main-footer"></footer>
 
 	</div>
 
 	<script src="libs/jquery/dist/jquery.min.js"></script>
-	<!-- <script src="libs/popper.js/dist/popper.min.js"></script> -->
 	<script src="libs/bootstrap/dist/js/bootstrap.min.js"></script>
+	<script src="libs/OwlCarousel/dist/owl.carousel.min.js"></script>
 	<script src="js/common.js"></script>
 
 	
