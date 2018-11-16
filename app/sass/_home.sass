@@ -7,7 +7,7 @@
 		text-align: center
 		position: relative
 		margin-top: 1rem
-		margin-bottom: 3rem
+		margin-bottom: 4rem
 		&::before
 			content: ""
 			position: absolute
@@ -260,3 +260,88 @@
 			font-weight: 500
 	&__text
 		font-size: 0.9375rem
+
+
+.accordion-faq
+	&__item
+		margin-bottom: 1.25rem
+	&__header
+		padding: 0
+		
+		&-title
+			margin-bottom: 0
+		&-icon
+			margin-right: 0.5rem
+			transition: transform 0.25s ease-out
+	&__btn
+		display: block
+		width: 100%
+		text-align: left
+		padding: 1.25rem 1.75rem
+		display: flex
+		align-items: center
+		white-space: normal
+		&:hover, &:focus
+			text-decoration: none
+		&:hover
+			.accordion-faq__header-icon
+				transform: scale(1.25)
+
+
+.home-articles
+	&__col
+		margin-bottom: 15px
+	&__item
+		border: 1px solid rgba(0,0,0,.125)
+		border-radius: 5px
+		overflow: hidden
+		height: 100%
+		margin-bottom: 1.25rem
+	&__link-img
+		position: relative
+		display: block
+		&:hover
+			.home-articles__img
+				opacity: 0.8
+	&__img
+		padding-top: 50%
+		background-position: center center
+		background-repeat: no-repeat
+		background-size: cover
+		
+		transition: opacity 0.25s ease-out
+	
+	&__date
+		&-wrap
+			position: absolute
+			top: 0
+			left: 0
+			z-index: 1
+		&-number, &-month
+			font-size: 1rem
+			text-transform: uppercase
+			text-align: center
+			font-weight: 500
+			color: #fff
+			padding: 0.125rem 0.375rem
+		&-number
+			background-color: $blue
+		&-month
+			background-color: $red
+
+	&__content
+		padding: 1.25rem 1rem
+	&__title-wrap
+		margin-bottom: 1.25rem
+	&__text
+		font-size: 0.9375rem
+		margin-bottom: 1.25rem
+	&__link-full
+		text-transform: uppercase
+		font-weight: 500
+		font-size: 0.9375rem
+		&-icon
+			font-size: 0.625rem
+			margin-left: 0.25rem
+			position: relative
+			top: -1px
