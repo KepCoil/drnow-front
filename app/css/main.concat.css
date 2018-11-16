@@ -445,3 +445,60 @@ ul, ol {
     margin-left: 0.25rem;
     position: relative;
     top: -1px; }
+
+.main-footer__first-line {
+  background-color: #19456b;
+  padding: 3rem 0 4rem 0;
+  color: #fff; }
+
+.main-footer__second-line {
+  background-color: #dc3545;
+  padding: 0.5rem 0;
+  color: #fff; }
+
+.footer-links {
+  margin-bottom: 1rem; }
+  .footer-links__list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0 0 3rem 0; }
+  .footer-links__item {
+    margin-bottom: 1.5rem; }
+  .footer-links__link {
+    font-weight: 500;
+    font-size: 0.875rem;
+    color: #eee; }
+    .footer-links__link:hover {
+      color: #fff; }
+
+.footer-btn__col:first-child {
+  text-align: right; }
+
+.footer-btn__col:nth-child(2) {
+  text-align: center; }
+
+.footer-btn__col:last-child {
+  text-align: left; }
+
+.footer-btn__link {
+  font-size: 1.125rem;
+  color: #eee;
+  font-weight: 700; }
+  .footer-btn__link:hover {
+    color: #fff; }
+
+.footer-btn__icon {
+  margin-right: 0.5rem; }
+
+.end-footer {
+  font-size: 0.875rem; }
+  .end-footer__col:first-child {
+    text-align: left; }
+  .end-footer__col:last-child {
+    text-align: right; }
+  .end-footer__link {
+    color: #fff; }
+    .end-footer__link:hover {
+      color: #fff; }
+  .end-footer__sep {
+    margin: 0 0.2rem; }
