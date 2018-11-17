@@ -1,0 +1,101 @@
+/*==========  Desktop First Method  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1199.98px)
+	html
+		font-size: 90%
+
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 991.98px)
+	html
+		font-size: 85%
+	.main-slider
+		&__slide-img
+			padding-top: 35%
+		&__slide-content-title
+			font-size: 2rem
+			margin-bottom: 1rem
+	.promo
+		&__wrap-img
+			width: 12rem
+			height: 12rem
+
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 767.98px)
+	html
+		font-size: 90%
+	.home-sect
+		padding: 3rem 0
+		&__main-title
+			margin-bottom: 3rem
+	.preview
+		padding-top: 0
+		&__small-info
+			padding-top: 3rem
+			margin-top: 0
+			z-index: auto
+	.main-slider
+		&__slide-img
+			padding-top: 40%
+	.small-info
+		box-shadow: none
+		&__item
+			border-right: none
+			padding: 0 0 1rem 0
+	.promo
+		&__item
+			margin-bottom: 3rem
+		&__item-col
+			text-align: center
+			&.order-2
+				order: inherit
+		&__wrap-img
+			margin: 0 auto 1rem auto
+	.footer-btn
+		.footer-btn__col
+			text-align: left
+			margin-bottom: 1.5rem
+	.main-footer
+		&__first-line
+			padding-bottom: 3rem
+		&__second-line
+			padding: 1rem 0
+	.end-footer
+		.end-footer__col
+			text-align: left
+			&:first-child
+				margin-bottom: 2rem
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 575.98px)
+	html
+		font-size: 85%
+	.main-slider
+		&__slide-img
+			padding-top: 50%
+		&__slide-content-title
+			font-size: 1.75rem
+		.btn-group-lg > .btn, .btn-lg
+			font-size: 1rem
+			padding: 0.375rem 0.75rem
+		&.owl-carousel 
+			.owl-nav button.owl-prev
+				left: 1rem
+			.owl-nav button.owl-next
+				right: 1rem
+			
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 419.98px)
+	html
+		font-size: 80%
+	.end-footer
+		&__link
+			display: block
+			&:first-child
+				margin-bottom: 1rem
+		&__sep
+			display: none
