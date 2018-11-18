@@ -1,5 +1,17 @@
 $(function() {
 
+	var scrollTopNum = $(window).scrollTop();
+
+	console.log(scrollTopNum);
+
+	if (scrollTopNum > 0) {
+		$('.hidden-scroll').each(function () {
+			$(this).addClass('.js-hidden-scroll');
+		})
+	} else {
+		$(this).removeClass('.js-hidden-scroll');
+	}
+
 	
 	$('#js-main-slider').owlCarousel({
 		items: 1,

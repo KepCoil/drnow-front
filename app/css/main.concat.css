@@ -40,6 +40,9 @@ main#main-content-layour {
   position: relative;
   margin-top: 130px; }
 
+.js-hidden-scroll {
+  display: none; }
+
 .main-header {
   position: fixed;
   top: 0;
