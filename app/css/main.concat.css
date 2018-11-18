@@ -508,7 +508,15 @@ ul, ol {
 /* Large Devices, Wide Screens */
 @media only screen and (max-width: 1199.98px) {
   html {
-    font-size: 90%; } }
+    font-size: 90%; }
+  .path-arrows__item:first-child .path-arrows__content {
+    margin-left: 35px; }
+  .path-arrows__content {
+    margin-top: 45px;
+    margin-left: 55px;
+    margin-right: 45px; }
+    .path-arrows__content-icon {
+      font-size: 1.5rem; } }
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width: 991.98px) {
@@ -519,6 +527,16 @@ ul, ol {
   .main-slider__slide-content-title {
     font-size: 2rem;
     margin-bottom: 1rem; }
+  .path-arrows__item:first-child .path-arrows__content {
+    margin-left: 20px; }
+  .path-arrows__content {
+    margin-top: 30px;
+    margin-left: 55px;
+    margin-right: 45px; }
+    .path-arrows__content-icon {
+      font-size: 1.25rem; }
+    .path-arrows__content-text-number {
+      font-size: 0.75rem; }
   .promo__wrap-img {
     width: 12rem;
     height: 12rem; } }
