@@ -36,6 +36,81 @@ ul, ol {
   margin: 1.25rem 0 2rem 0;
   padding-left: 2.5rem; }
 
+main#main-content-layour {
+  position: relative;
+  margin-top: 130px; }
+
+.main-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 0.5rem 0;
+  border-bottom: #888;
+  -webkit-box-shadow: 0 2px 5px #888;
+          box-shadow: 0 2px 5px #888;
+  z-index: 10;
+  background: #fff;
+  -webkit-transition: all .4s ease-outs;
+  -o-transition: all .4s ease-outs;
+  transition: all .4s ease-outs; }
+
+.main-logo__link {
+  display: block;
+  text-align: center;
+  -webkit-transition: opacity 0.25s ease-out;
+  -o-transition: opacity 0.25s ease-out;
+  transition: opacity 0.25s ease-out; }
+  .main-logo__link:hover {
+    opacity: 0.8;
+    text-decoration: none; }
+    .main-logo__link:hover .main-logo__text {
+      text-decoration: none; }
+
+.main-logo__text {
+  display: block;
+  margin-top: 1rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 0.5rem;
+  letter-spacing: 0.32rem;
+  font-weight: 700;
+  color: #212529;
+  white-space: nowrap; }
+
+.quick-links__row {
+  text-align: center; }
+
+.quick-links__link {
+  font-weight: 700;
+  font-size: 0.875rem; }
+
+.main-nav {
+  margin-top: 45px; }
+  .main-nav__row {
+    text-align: center; }
+  .main-nav__list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0; }
+  .main-nav__item-link {
+    color: #212529;
+    text-transform: uppercase;
+    padding: 0.75rem 1rem;
+    font-size: 1.125rem;
+    font-weight: 700; }
+    .main-nav__item-link:hover {
+      text-decoration: none; }
+
+.go-call {
+  margin-top: 36px; }
+  .go-call__btn {
+    font-weight: 700;
+    padding: 0.7rem 1rem;
+    font-size: 1.125rem;
+    text-transform: uppercase;
+    line-height: 1; }
+
 .home-sect {
   padding: 5rem 0; }
   .home-sect-grey {
@@ -89,7 +164,7 @@ ul, ol {
         color: #fff;
         text-shadow: 3px 2px 1px rgba(0, 0, 0, 0.75); }
     .main-slider__slide-img {
-      padding-top: 30%;
+      padding-top: 35%;
       background-position: center center;
       background-repeat: no-repeat;
       -webkit-background-size: cover;
