@@ -16,6 +16,8 @@
 			&-icon
 				font-size: 1.5rem
 			&-text-number
+	main#main-content-layour
+		margin-top: 110px
 
 
 
@@ -23,12 +25,38 @@
 @media only screen and (max-width : 991.98px)
 	html
 		font-size: 85%
+
+	main#main-content-layour
+		margin-top: 90px
+
+	.main-header
+		.js-main-logo-col
+			flex: 0 0 16.66667%
+			max-width: 16.66667%
+		.js-quick-links-col
+			flex: 0 0 50%
+			max-width: 50%
+
+	.main-logo
+		&__text
+			letter-spacing: 0.2rem
+	.main-nav
+		margin-top: 35px
+	.go-call
+		margin-top: 26px
+
 	.main-slider
 		&__slide-img
-			padding-top: 35%
+			padding-top: 40%
 		&__slide-content-title
 			font-size: 2rem
 			margin-bottom: 1rem
+
+	.preview
+		&__small-info
+			&-container
+				max-width: 100%
+
 	.path-arrows
 		&__item
 			&:first-child 
@@ -42,10 +70,19 @@
 				font-size: 1.25rem
 			&-text-number
 				font-size: 0.75rem
+
 	.promo
 		&__wrap-img
 			width: 12rem
 			height: 12rem
+	
+
+
+@media only screen and (max-width : 991.98px) and (min-width : 768px)
+	.main-header
+		&__container
+			max-width: 100%
+
 
 
 /* Small Devices, Tablets */
@@ -56,6 +93,10 @@
 		padding: 3rem 0
 		&__main-title
 			margin-bottom: 3rem
+	.main-logo
+		max-width: 250px
+	.go-call
+		text-align: center
 	.preview
 		padding-top: 0
 		&__small-info
@@ -93,6 +134,11 @@
 			text-align: left
 			&:first-child
 				margin-bottom: 2rem
+	.quick-links-phone
+		display: none			
+	.main-logo-col
+		display: flex
+		align-items: center
 
 
 /* Extra Small Devices, Phones */
@@ -112,6 +158,9 @@
 				left: 1rem
 			.owl-nav button.owl-next
 				right: 1rem
+	.main-logo
+		max-width: 200px
+	
 			
 
 /* Extra Small Devices, Phones */
@@ -119,10 +168,11 @@
 	html
 		font-size: 80%
 	.end-footer
-		_
 		&__link
 			display: block
 			&:first-child
 				margin-bottom: 1rem
 		&__sep
 			display: none
+	.main-logo
+		max-width: 170px

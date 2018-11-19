@@ -22,21 +22,30 @@
 	<div id="wrapwrap">
 
 
-		<header id="main-header" class="main-header">
-			<div class="container">
-				<div class="row">
+		<header id="main-header" class="main-header js-main-header">
+			<div class="container main-header__container">
+				<div class="row  main-header__row">
 					
-					<div class="col-sm-3">
+					<div class="col-lg-3 col-md-3 main-logo-col">
+
 						<div class="main-logo">
 							<a href="/" class="main-logo__link">
 								<img class="main-logo__img img-fluid" src="img/main-logo.svg" alt="">
 								<span class="main-logo__text hidden-scroll">Медицинские Консультации</span>
+								<!-- Ну типо h1 должен быть, а его нет :) -->
+								<h1 class="d-none">DrNow - Медицинские консультации</h1>
+							</a>
+						</div>
+
+						<div class="mobile-menu-btn d-md-none d-lg-none d-xl-none">
+							<a class="mobile-menu-btn__link" href="#">
+								<span class="mobile-menu-btn__line-btn"></span>
 							</a>
 						</div>
 					</div>
 
 
-					<div class="col-sm-6">
+					<div class="col-lg-6 col-md-5 quick-links-col d-none d-sm-none d-md-block">
 						<div class="quick-links hidden-scroll">
 							<div class="row quick-links__row">
 
@@ -72,18 +81,16 @@
 					</div>
 
 
-					<div class="col-sm-3">
+					<div class="col-lg-3 col-md-4">
 
-						<div class="quick-links text-right hidden-scroll">
-							<div class="col">
-								<a href="tel:88002000600" class="quick-links__link">
-									<i class="fas fa-phone quick-links__icon"></i>
-									<span class="quick-links__text">8-800-2000-600</span>
-								</a>
-							</div>
+						<div class="quick-links quick-links-phone hidden-scroll">
+							<a href="tel:88002000600" class="quick-links__link">
+								<i class="fas fa-phone quick-links__icon"></i>
+								<span class="quick-links__text">8-800-2000-600</span>
+							</a>
 						</div>
 
-						<div class="go-call text-right">
+						<div class="go-call">
 							<button type="button" class="btn btn-danger go-call__btn">
 								<i class="fas fa-ambulance go-call__icon"></i>
                 			<span class="go-call__text">Консультация</span>
@@ -99,7 +106,7 @@
 
 
 
-		<main id="main-content-layour">
+		<main id="main-content-layour" class="js-main-content-layour">
 
 			<section class="home-sect preview">
 
@@ -141,7 +148,7 @@
 
 
 				<div class="preview__small-info">
-					<div class="container">
+					<div class="container preview__small-info-container">
 						<div class="small-info">
 
 							<div class="small-info__row row">

@@ -36,12 +36,43 @@ ul, ol {
   margin: 1.25rem 0 2rem 0;
   padding-left: 2.5rem; }
 
+#wrapwrap {
+  position: relative; }
+
 main#main-content-layour {
   position: relative;
   margin-top: 130px; }
 
-.js-hidden-scroll {
+.alert, .btn, .container, .container-fluid, .dropdown, .jqte_tool_icon, .message, .message.error, .message.required, .row, .transition, [class="col-*"], [data-target], a, a.fab, a .fab, a.far, a .far, a.fas, a .fas, a img, button, button.fab, button .fab, button.far, button .far, button.fas, button .fas, input, optgroup, select, textarea {
+  -webkit-transition: all 0.4s ease-out;
+  -o-transition: all 0.4s ease-out;
+  transition: all 0.4s ease-out; }
+
+.main-header .js-hidden-scroll {
   display: none; }
+
+.main-header .js-main-logo-col {
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 0 16.66667%;
+      -ms-flex: 0 0 16.66667%;
+          flex: 0 0 16.66667%;
+  max-width: 16.66667%; }
+
+.main-header .js-quick-links-col {
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 0 58.33333%;
+      -ms-flex: 0 0 58.33333%;
+          flex: 0 0 58.33333%;
+  max-width: 58.33333%; }
+
+.main-header .margin-top-null {
+  margin-top: 0; }
+
+.main-header .flex-align-items-vertica-center {
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center; }
 
 .main-header {
   position: fixed;
@@ -54,9 +85,13 @@ main#main-content-layour {
           box-shadow: 0 2px 5px #888;
   z-index: 10;
   background: #fff;
-  -webkit-transition: all .4s ease-outs;
-  -o-transition: all .4s ease-outs;
-  transition: all .4s ease-outs; }
+  -webkit-transition: all .4s ease-out;
+  -o-transition: all .4s ease-out;
+  transition: all .4s ease-out; }
+  .main-header div {
+    -webkit-transition: all .4s ease-out;
+    -o-transition: all .4s ease-out;
+    transition: all .4s ease-out; }
 
 .main-logo__link {
   display: block;
@@ -88,6 +123,9 @@ main#main-content-layour {
   font-weight: 700;
   font-size: 0.875rem; }
 
+.quick-links-phone {
+  text-align: right; }
+
 .main-nav {
   margin-top: 45px; }
   .main-nav__row {
@@ -106,13 +144,45 @@ main#main-content-layour {
       text-decoration: none; }
 
 .go-call {
-  margin-top: 36px; }
+  margin-top: 36px;
+  text-align: right; }
   .go-call__btn {
     font-weight: 700;
     padding: 0.7rem 1rem;
     font-size: 1.125rem;
     text-transform: uppercase;
     line-height: 1; }
+
+.mobile-menu-btn__link {
+  position: relative; }
+
+.mobile-menu-btn__line-btn {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  bottom: auto;
+  right: auto;
+  display: inline-block;
+  width: 18px;
+  height: 3px;
+  background-color: #dc3545;
+  z-index: 10; }
+  .mobile-menu-btn__line-btn::before, .mobile-menu-btn__line-btn::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #dc3545; }
+  .mobile-menu-btn__line-btn::before {
+    -webkit-transform: translateY(-6px) rotate(0deg);
+        -ms-transform: translateY(-6px) rotate(0deg);
+            transform: translateY(-6px) rotate(0deg); }
+  .mobile-menu-btn__line-btn::after {
+    -webkit-transform: translateY(6px) rotate(0deg);
+        -ms-transform: translateY(6px) rotate(0deg);
+            transform: translateY(6px) rotate(0deg); }
 
 .home-sect {
   padding: 5rem 0; }
@@ -594,17 +664,41 @@ main#main-content-layour {
     margin-left: 55px;
     margin-right: 45px; }
     .path-arrows__content-icon {
-      font-size: 1.5rem; } }
+      font-size: 1.5rem; }
+  main#main-content-layour {
+    margin-top: 110px; } }
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width: 991.98px) {
   html {
     font-size: 85%; }
+  main#main-content-layour {
+    margin-top: 90px; }
+  .main-header .js-main-logo-col {
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 16.66667%;
+        -ms-flex: 0 0 16.66667%;
+            flex: 0 0 16.66667%;
+    max-width: 16.66667%; }
+  .main-header .js-quick-links-col {
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 50%;
+        -ms-flex: 0 0 50%;
+            flex: 0 0 50%;
+    max-width: 50%; }
+  .main-logo__text {
+    letter-spacing: 0.2rem; }
+  .main-nav {
+    margin-top: 35px; }
+  .go-call {
+    margin-top: 26px; }
   .main-slider__slide-img {
-    padding-top: 35%; }
+    padding-top: 40%; }
   .main-slider__slide-content-title {
     font-size: 2rem;
     margin-bottom: 1rem; }
+  .preview__small-info-container {
+    max-width: 100%; }
   .path-arrows__item:first-child .path-arrows__content {
     margin-left: 20px; }
   .path-arrows__content {
@@ -619,6 +713,10 @@ main#main-content-layour {
     width: 12rem;
     height: 12rem; } }
 
+@media only screen and (max-width: 991.98px) and (min-width: 768px) {
+  .main-header__container {
+    max-width: 100%; } }
+
 /* Small Devices, Tablets */
 @media only screen and (max-width: 767.98px) {
   html {
@@ -627,6 +725,10 @@ main#main-content-layour {
     padding: 3rem 0; }
     .home-sect__main-title {
       margin-bottom: 3rem; }
+  .main-logo {
+    max-width: 250px; }
+  .go-call {
+    text-align: center; }
   .preview {
     padding-top: 0; }
     .preview__small-info {
@@ -662,7 +764,18 @@ main#main-content-layour {
   .end-footer .end-footer__col {
     text-align: left; }
     .end-footer .end-footer__col:first-child {
-      margin-bottom: 2rem; } }
+      margin-bottom: 2rem; }
+  .quick-links-phone {
+    display: none; }
+  .main-logo-col {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center; } }
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width: 575.98px) {
@@ -678,7 +791,9 @@ main#main-content-layour {
   .main-slider.owl-carousel .owl-nav button.owl-prev {
     left: 1rem; }
   .main-slider.owl-carousel .owl-nav button.owl-next {
-    right: 1rem; } }
+    right: 1rem; }
+  .main-logo {
+    max-width: 200px; } }
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width: 419.98px) {
@@ -689,4 +804,6 @@ main#main-content-layour {
     .end-footer__link:first-child {
       margin-bottom: 1rem; }
   .end-footer__sep {
-    display: none; } }
+    display: none; }
+  .main-logo {
+    max-width: 170px; } }
