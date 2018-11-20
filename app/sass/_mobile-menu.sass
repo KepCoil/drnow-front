@@ -1,26 +1,47 @@
 .mobile-menu-btn
+	height: 44px
+	width: 44px
+	z-index: 5
+	overflow: hidden
+	text-indent: 100%
+	white-space: nowrap
+	background-color: #eee
 	&__link
 		position: relative
-	&__line-btn
-		position: absolute
-		left: 50%
-		top: 50%
-		bottom: auto
-		right: auto
-		display: inline-block
-		width: 18px
-		height: 3px
+		display: block
+		height: 100%
 		background-color: $red
+		border-radius: 50%
+		width: 100%
+		height: 100%
+		// &::before
+		// 	content: ''
+		// 	padding: 20px
+		// 	position: absolute
+		// 	top: 0
+		// 	left: 0
+		// 	right: 0
+		// 	bottom: 0
+		// 	border-radius: 50%
+		// 	height: 100%
+		// 	width: 100%
+		// 	background-color: $red
+	&__line-btn
+		// position: absolute
+		display: inline-block
+		width: 20px
+		height: 3px
+		background-color: #fff
 		z-index: 10
-		&::before, &::after
-			content: ''
-			position: absolute
-			top: 0
-			right: 0
-			width: 100%
-			height: 100%
-			background-color: $red
-		&::before
-			transform: translateY(-6px) rotate(0deg)
-		&::after
-			transform: translateY(6px) rotate(0deg)
+		// &::before, &::after
+		// 	content: ''
+		// 	// position: absolute
+		// 	top: 0
+		// 	right: 0
+		// 	width: 100%
+		// 	height: 100%
+		// 	background-color: #fff
+		// &::before
+		// 	transform: translateY(-6px) rotate(0deg)
+		// &::after
+		// 	transform: translateY(6px) rotate(0deg)

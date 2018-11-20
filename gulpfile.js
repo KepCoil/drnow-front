@@ -19,9 +19,9 @@ gulp.task('browser-sync', function() {
 		browser: 'firefox',
 		port: '3030',
 
-		server: {baseDir: 'app'},
-		// proxy: 'sibgu', //openserver local server
-		// proxy: 'drnow.front', //lampp local server
+		// server: {baseDir: 'app'},
+		// proxy: 'drnow.front', //window openserver local server
+		proxy: 'drnow.front', //lampp local server
 		
 	});
 });
@@ -40,36 +40,18 @@ gulp.task('sass', function() {
 
 gulp.task('common-js', function() {
 	return gulp.src([
-		'app/js/common.js'
+		'app/js/**/*.js'
 		])
-	//.pipe(concat('common.js'))
-	.pipe(uglify()) // Минимизация JS
-	.pipe(gulp.dest('app/js'));
+	// .pipe(uglify()) // Минимизация JS
+	.pipe(gulp.dest('app/js'))
+	.pipe(browserSync.reload({stream: true}));
 });
 
 
-// gulp.task('js', ['common-js'], function() {
-// 	return gulp.src([
-// 		'app/libs/mmenu/jquery.mmenu.all.js',
-// 		'app/libs/jquery-match-height/jquery.matchHeight-min.js',
-// 		'app/libs/owl.carousel/dist/owl.carousel.min.js',
-// 		'app/libs/jquery-sticky/jquery.sticky.js',
-// 		'app/libs/switch-items/jquery.switch-items.min.js',
-// 		'app/libs/simple-lightbox/simple-lightbox.modification.min.js',
-// 		'app/libs/list.js/list.min.js',
-// 		'app/libs/jquery-cookie/jquery.cookie.min.js'
-// 		])
-// 	.pipe(concat('jquery-libs.js'))
-// 	//.pipe(uglify()) // Минимизация JS
-// 	.pipe(gulp.dest('app/js'))
-// 	.pipe(browserSync.reload({stream: true}));
-// });
 
-
-// gulp.task('watch', ['sass', 'js', 'browser-sync'], function() {
-gulp.task('watch', ['sass', 'browser-sync'], function() {
+gulp.task('watch', ['sass', 'common-js', 'browser-sync'], function() {
 	gulp.watch('app/sass/**/*.sass', ['sass']);
-	// gulp.watch(['libs/**/*.js', 'app/js/**/*.js'], ['js']);
+	gulp.watch('app/js/**/*.js', ['common-js']);
 	gulp.watch('app/**/*.html', browserSync.reload);
 	gulp.watch('app/**/*.php', browserSync.reload);
 });
