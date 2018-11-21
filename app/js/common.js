@@ -5,6 +5,7 @@ $(function() {
 	$('.js-main-content-layour').css('margin-top', mainHeader);
 
 
+	
 	// шапка при скролле
 	function resizeMainHeader() {
 		var scrollTopNum = $(window).scrollTop();
@@ -35,6 +36,34 @@ $(function() {
 	}
 
 	resizeMainHeader();
+
+
+
+	/* Список врачей с поиском */
+	var 
+		options = { valueNames: [ 'js-doc-list' ]},
+		userList = new List('js-search-list', options);
+	
+	$('#js-search-list-input').on('input keyup', function(e) {
+
+		var checkNumbDocs = $('.doctors-list__nav-list').find('li').length;
+		
+		if (checkNumbDocs == 0) {
+			$('#js-search-clear-list').addClass('doctors-list__search-clear-list-active');
+		} 
+		else {
+			$('#js-search-clear-list').removeClass('doctors-list__search-clear-list-active');
+		}
+			
+	});
+
+	$(".doctors-list__nav-item-disable >a").click(function(e) {
+		e.preventDefault;
+		return false;
+	})
+	/* Список врачей с поиском */
+
+
 
 	// Слайдера
 	$('#js-main-slider').owlCarousel({

@@ -128,11 +128,16 @@
 .promo
 	&__item
 		margin-bottom: 2rem
+		&-inner
+			&:hover
+				.promo__wrap-img
+					transform: scale(1.1)
 	&__wrap-img
 		width: 15rem
 		height: 15rem
 		border-radius: 50%
 		overflow: hidden
+		transition: transform $main-trans
 	&__content
 		&-title
 			margin: 0 0 1rem 0
@@ -196,7 +201,7 @@
 			overflow: hidden
 			margin-bottom: 2rem
 			border: 0.4rem solid lighten($light, 25%)
-			transition: border-color 0.25s ease-out
+			transition: border-color $main-trans
 			margin: 0 0 0.5rem 0
 		&-doc
 			color: $light
@@ -212,7 +217,7 @@
 			border-radius: 3px
 			background-color: lighten($light, 25%)
 			text-decoration: none
-			transition: background-color 0.25s ease-out
+			transition: background-color $main-trans
 			&:hover
 				text-decoration: none
 				background-color: darken($red, 0%)
@@ -252,12 +257,19 @@
 .info-items
 	&__col
 		margin-bottom: 3.5rem
+	&__content
+		&:hover
+			.info-items__title-img-svg
+				transform: scale(1.15)
 	&__title
 		display: flex
 		align-items: center
 		margin-bottom: 0.75rem
-		&-img-wrap
-			margin-right: 0.2rem
+		&-img
+			&-wrap
+				margin-right: 0.2rem
+			&-svg
+				transition: transform $main-trans
 		&-text
 			color: $red
 			text-transform: uppercase
@@ -277,7 +289,7 @@
 			color: $red
 		&-icon
 			margin-right: 0.5rem
-			transition: transform 0.25s ease-out
+			transition: transform $main-trans
 	&__btn
 		display: block
 		width: 100%
@@ -314,7 +326,7 @@
 		background-repeat: no-repeat
 		background-size: cover
 		
-		transition: opacity 0.25s ease-out
+		transition: opacity $main-trans
 	
 	&__date
 		&-wrap

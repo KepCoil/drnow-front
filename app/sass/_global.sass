@@ -5,9 +5,8 @@ html
 	font-size: 100%
 
 body
-	min-width: 320px
-	height: auto
 	position: relative
+	min-width: 320px
 	overflow-x: hidden
 	opacity: 1
 	background-color: #fff
@@ -24,28 +23,31 @@ a
 	&:hover
 		color: darken($red, 12%)
 		text-decoration: underline
+
 p
 	margin: 0 0 0.75rem 0
 
-h1, h2, h3, h4, h5, h6 .h1, .h2, .h3, .h4, .h5, .h6
-	color: $default-color;
-	letter-spacing: 0.1rem
 
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6
+	color: $default-color
+	letter-spacing: 0.2rem
+
+h1, .h1
+	font-size: 2.5rem
+	margin: 3.5rem 0 1rem 0
 h2, .h2
 	font-size: 2.25rem
-
+	margin: 3rem 0 1rem 0
 h3, .h3
 	font-size: 1.75rem
-	margin: 3rem 0 1rem 0
-
+	margin: 2.5rem 0 1rem 0
 h4, .h4
 	font-size: 1.5rem
-	margin: 2.22rem 0 1rem 0
-
+	margin: 2rem 0 1rem 0
 h5, .h5
 	font-size: 1.25rem
 	margin: 1.5rem 0 1rem 0
-
 h6, .h6
 	font-size: 1.125rem
 	margin: 1.25rem 0 1rem 0
@@ -54,19 +56,21 @@ ul, ol
 	margin: 0.5rem 0 1.5rem 0
 	padding-left: 2.5rem
 
-
-
 #wrapwrap
 	position: relative
 
-main#main-content-layour
+#main-content-layour
 	position: relative
 	margin-top: 130px
+
 .main-content-layour
 	&-home-page
 
 	&-inner-page
 		padding: 5rem 0
+		&__main-title
+			margin-bottom: 3rem
+			color: $red
 
-.alert, .btn, .container, .container-fluid, .dropdown, .jqte_tool_icon, .message, .message.error, .message.required, .row, .transition, [class="col-*"], [data-target], a, a.fab, a .fab, a.far, a .far, a.fas, a .fas, a img, button, button.fab, button .fab, button.far, button .far, button.fas, button .fas, input, optgroup, select, textarea
+.alert, .btn, .dropdown, .message, .message.error, .message.required, .transition, [class="col-*"], [data-target], a, a.fab, a .fab, a.far, a .far, a.fas, a .fas, a img, button, button.fab, button .fab, button.far, button .far, button.fas, button .fas, input, optgroup, select, textarea
 	transition: all 0.4s ease-out

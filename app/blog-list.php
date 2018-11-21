@@ -8,8 +8,9 @@
 
 	<div class="blog-list">
 		<div class="container">
+
+			<h2 class="main-content-layour-inner-page__main-title">Докторский блог</h2>
 			
-			<h2 class="blog-list__main-title">Докторский блог</h2>
 
 			<div class="row blog-list__row">
 				
@@ -304,6 +305,12 @@
 
 
 			</div>
+
+
+			<div class="blog-list__navigation">
+				<!-- Нужна пагинация или дозагрузка постов -->
+			</div>
+
 		</div>
 
 	</div>
