@@ -84,14 +84,47 @@
 		margin: 0
 		padding: 0
 	&__item
-		display: flex
 		box-shadow: 0 2px 0 0 #dbdbdb, 0 0 0 1px #dbdbdb
 		// padding: 1rem
 		border-radius: 3px
-		margin-bottom: 15px
+		margin-bottom: 30px
+		&-right
+			padding: 1rem 1.25rem
+	&__main
+		display: flex
 	&__wrap-img
 		height: 100%
+		overflow: hidden
 	&__img
+		width: 12rem
 		height: 100%
-		width: 300px
-		
+		background-size: cover
+		background-position: top center
+	&__name
+		margin: 0 0 0.5rem 0
+		font-size: 1.25rem
+		color: $red
+	&__doc
+		color: $light
+		margin: 0 0 0.75rem 0
+	&__text
+		font-size: 0.9375rem
+		margin-bottom: 1.5rem
+	&__wrap-btn
+		display: flex
+	&__btn
+		margin-right: 1rem
+		color: #fff
+		&-attendant
+			background-color: $red
+		&-consultation
+			background-color: lighten($blue, 10%)
+		&-write
+			background-color: $green
+		&:last-child
+			margin-right: 0
+		&-icon
+			margin-right: 0.375rem
+
+
+				
