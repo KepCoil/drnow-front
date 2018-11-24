@@ -77,7 +77,15 @@
 		&__wrap-img
 			width: 12rem
 			height: 12rem
-	
+	.doctors-list
+		&__item
+			&-right
+				padding: 0.75rem 1rem
+		&__img
+			width: 7rem
+		&__btn
+			padding: 0.3rem 0.6rem
+			font-size: 0.9375rem
 
 
 @media only screen and (max-width : 991.98px) and (min-width : 768px)
@@ -114,6 +122,10 @@
 			margin-bottom: 3rem
 	.main-logo
 		max-width: 250px
+		&-col
+			display: flex
+			align-items: center
+			justify-content: space-between
 	.go-call
 		text-align: center
 	.preview
@@ -183,15 +195,17 @@
 				margin-bottom: 2rem
 	.quick-links-phone
 		display: none			
-	.main-logo-col
-		display: flex
-		align-items: center
-		justify-content: space-between
-
+	
 
 	.home-articles
 		&__col
 			margin-bottom: 2rem
+	.doctors-list
+		&__nav
+			margin-bottom: 15px
+			&-list
+				height: 150px
+				overflow-y: scroll
 
 
 /* Small Devices - Phones, large display */
@@ -212,7 +226,9 @@
 			.owl-nav button.owl-next
 				right: 1rem
 	.main-logo
-		max-width: 200px
+		width: 180px
+		&__text
+			display: none
 	
 			
 
@@ -228,4 +244,4 @@
 		&__sep
 			display: none
 	.main-logo
-		max-width: 170px
+		width: 140px

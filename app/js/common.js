@@ -50,12 +50,24 @@ $(function() {
 		
 		if (checkNumbDocs == 0) {
 			$('#js-search-clear-list').addClass('doctors-list__search-clear-list-active');
+
+			if ($(window).width() < 768) {
+				$('.doctors-list__nav-list').css('height', 'auto');
+			}
 		} 
 		else {
 			$('#js-search-clear-list').removeClass('doctors-list__search-clear-list-active');
+			
+			if ($(window).width() < 768) {
+				$('.doctors-list__nav-list').css('height', '150px');
+			}
 		}
 			
 	});
+
+	function resizeDoctorListMobile() {
+		
+	}
 
 	$(".doctors-list__nav-item-disable >a").click(function(e) {
 		e.preventDefault;

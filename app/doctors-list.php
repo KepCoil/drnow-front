@@ -13,7 +13,7 @@
 
 				<div class="row sidebar-page__row">
 
-					<div class="col-md-3 col-sm-4 sidebar-page__col">
+					<div class="col-md-3 sidebar-page__col">
 						<aside class="sidebar-page__sidebar main-sidebar">
 							<div id="js-search-list" class="main-sidebar__container">
 
@@ -140,7 +140,7 @@
 					</div>
 
 
-					<div class="col-md-9 col-sm-8 sidebar-page__col">
+					<div class="col-md-9 sidebar-page__col">
 						<div class="sidebar-page__main-content">
 
 							<div class="doctors-list__content">
@@ -148,12 +148,12 @@
 								<div class="doctors-list__item">
 									<div class="doctors-list__main">
 										<div class="doctors-list__item-left">
-											<div class="doctors-list__wrap-img">
+											<div class="doctors-list__wrap-img" data-toggle="modal" data-target="#doc-card-info-1">
 												<div class="doctors-list__img" style="background-image: url('img/test/doc-photo/doc1.jpg');"></div>
 											</div>
 										</div>
 										<div class="doctors-list__item-right">
-											<h4 class="doctors-list__name">Иванов Иван Иванович</h4>
+											<h4 class="doctors-list__name" data-toggle="modal" data-target="#doc-card-info-1">Иванов Иван Иванович</h4>
 											<div class="doctors-list__doc">Хирург</div>
 											<div class="doctors-list__text">Кандидат медицинских наук. Врач высшей квалификационной категории. Стаж работы - 24 года.</div>
 											<div class="doctors-list__wrap-btn">
@@ -164,6 +164,31 @@
 										</div>
 									</div>
 									<div class="doctors-list__info"></div>
+
+									<!-- Modal -->
+									<div class="modal fade doctors-list__modal" id="doc-card-info-1" tabindex="-1" role="dialog" aria-hidden="true">
+										<div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+											<div class="modal-content">
+												<div class="modal-header">
+													<h5 class="modal-title" id="exampleModalCenterTitle">Карточка доктора</h5>
+													<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+														<span aria-hidden="true">&times;</span>
+													</button>
+												</div>
+												<div class="modal-body">
+													...
+												</div>
+												<div class="modal-footer">
+													<div class="doctors-list__wrap-btn">
+												<button class="btn doctors-list__btn doctors-list__btn-attendant"><i class="doctors-list__btn-icon fas fa-ambulance"></i>Дежурный</button>
+												<button class="btn doctors-list__btn doctors-list__btn-consultation"><i class="doctors-list__btn-icon fas fa-user-md"></i>Консультация</button>
+												<button class="btn doctors-list__btn doctors-list__btn-write"><i class="doctors-list__btn-icon fas fa-comments"></i>Написать</button>
+											</div>
+													<button type="button" class="btn btn-secondary" data-dismiss="modal">Закрыть</button>
+												</div>
+											</div>
+										</div>
+									</div>
 								</div>
 
 								<div class="doctors-list__item">

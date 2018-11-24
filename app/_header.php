@@ -66,7 +66,7 @@
 					</a>
 				</div>
 
-				<div class="go-call">
+				<div class="go-call d-none d-sm-none d-md-block">
 					<button type="button" class="btn btn-danger go-call__btn">
 						<i class="fas fa-ambulance go-call__icon"></i>
 						<span class="go-call__text">Консультация</span>
