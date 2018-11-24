@@ -163,7 +163,7 @@
 											</div>
 										</div>
 									</div>
-									<div class="doctors-list__info">12312</div>
+									<div class="doctors-list__info"></div>
 								</div>
 
 								<div class="doctors-list__item">
@@ -184,7 +184,49 @@
 											</div>
 										</div>
 									</div>
-									<div class="doctors-list__info">12312</div>
+									<div class="doctors-list__info"></div>
+								</div>
+
+								<div class="doctors-list__item">
+									<div class="doctors-list__main">
+										<div class="doctors-list__item-left">
+											<div class="doctors-list__wrap-img">
+												<div class="doctors-list__img" style="background-image: url('img/test/doc-photo/doc1.jpg');"></div>
+											</div>
+										</div>
+										<div class="doctors-list__item-right">
+											<h4 class="doctors-list__name">Иванов Иван Иванович</h4>
+											<div class="doctors-list__doc">Хирург</div>
+											<div class="doctors-list__text">Кандидат медицинских наук. Врач высшей квалификационной категории. Стаж работы - 24 года. Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Страна, проектах. Единственное переписывается океана над, последний букв, рукопись до.</div>
+											<div class="doctors-list__wrap-btn">
+												<button class="btn doctors-list__btn doctors-list__btn-attendant"><i class="doctors-list__btn-icon fas fa-ambulance"></i>Дежурный</button>
+												<button class="btn doctors-list__btn doctors-list__btn-consultation"><i class="doctors-list__btn-icon fas fa-user-md"></i>Консультация</button>
+												<button class="btn doctors-list__btn doctors-list__btn-write"><i class="doctors-list__btn-icon fas fa-comments"></i>Написать</button>
+											</div>
+										</div>
+									</div>
+									<div class="doctors-list__info"></div>
+								</div>
+
+								<div class="doctors-list__item">
+									<div class="doctors-list__main">
+										<div class="doctors-list__item-left">
+											<div class="doctors-list__wrap-img">
+												<div class="doctors-list__img" style="background-image: url('img/test/doc-photo/doc2.jpg');"></div>
+											</div>
+										</div>
+										<div class="doctors-list__item-right">
+											<h4 class="doctors-list__name">Кузнецова Елена Сергеевна</h4>
+											<div class="doctors-list__doc">Хирург</div>
+											<div class="doctors-list__text">Занимается мануальной терапией больше 50 лет. Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Ты, безопасную они. Семантика рукописи толку они которой, одна букв, вопроса составитель вскоре реторический всемогущая ведущими ipsum прямо предупредила переулка?</div>
+											<div class="doctors-list__wrap-btn">
+												<button class="btn doctors-list__btn doctors-list__btn-attendant"><i class="doctors-list__btn-icon fas fa-ambulance"></i>Дежурный</button>
+												<button class="btn doctors-list__btn doctors-list__btn-consultation"><i class="doctors-list__btn-icon fas fa-user-md"></i>Консультация</button>
+												<button class="btn doctors-list__btn doctors-list__btn-write"><i class="doctors-list__btn-icon fas fa-comments"></i>Написать</button>
+											</div>
+										</div>
+									</div>
+									<div class="doctors-list__info"></div>
 								</div>
 								
 							</div>

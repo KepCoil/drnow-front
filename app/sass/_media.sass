@@ -59,6 +59,7 @@
 
 	.path-arrows
 		&__item
+			height: 103px
 			&:first-child 
 				.path-arrows__content
 					margin-left: 20px
@@ -68,6 +69,7 @@
 			margin-right: 45px
 			&-icon
 				font-size: 1.25rem
+
 			&-text-number
 				font-size: 0.75rem
 
@@ -82,7 +84,24 @@
 	.main-header
 		&__container
 			max-width: 100%
-
+	.path-arrows
+		&__item
+			&:first-child 
+				.path-arrows__content
+					margin-left: 30px
+					margin-top: 30px
+		&__content
+			margin-top: 25px
+			margin-left: 45px
+			margin-right: 40px
+			&-icon
+				display: none
+			&-text
+				padding-left: 15px
+				&-number
+					font-size: 0.875rem
+					margin-left: -18px
+					margin-top: 0px
 
 
 /* Small Devices, Tablets */
@@ -111,6 +130,34 @@
 		&__item
 			border-right: none
 			padding: 0 0 1rem 0
+
+	.path-arrows
+		&__wrap-item
+			flex-direction: column
+			align-items: center
+		&__item
+			width: 290px
+			height: 130px
+			&:first-child 
+				.path-arrows__content
+					margin-left: 48px
+					margin-right: 40px
+			&:hover
+				transform: none !important
+		&__content
+			margin-top: 40px
+			margin-left: 50px
+			margin-right: 40px
+			&-icon
+				font-size: 21px
+				margin-top: -5px
+			&-text
+				padding-left: 35px
+				&-number
+					font-size: 18px
+				&-title
+					font-size: 14px
+    
 	.promo
 		&__item
 			margin-bottom: 3rem
@@ -147,10 +194,10 @@
 			margin-bottom: 2rem
 
 
-/* Extra Small Devices, Phones */
+/* Small Devices - Phones, large display */
 @media only screen and (max-width : 575.98px)
 	html
-		font-size: 85%
+		font-size: 90%
 	.main-slider
 		&__slide-img
 			padding-top: 50%
@@ -169,10 +216,10 @@
 	
 			
 
-/* Extra Small Devices, Phones */
+/* Small Devices - Phones, small display */
 @media only screen and (max-width : 419.98px)
 	html
-		font-size: 80%
+		font-size: 85%
 	.end-footer
 		&__link
 			display: block
