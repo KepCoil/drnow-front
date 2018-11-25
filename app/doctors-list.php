@@ -156,103 +156,63 @@
 											<h4 class="doctors-list__name" data-toggle="modal" data-target="#doc-card-info-1">Иванов Иван Иванович</h4>
 											<div class="doctors-list__doc">Хирург</div>
 											<div class="doctors-list__text">Кандидат медицинских наук. Врач высшей квалификационной категории. Стаж работы - 24 года.</div>
-											<div class="doctors-list__wrap-btn">
-												<button class="btn doctors-list__btn doctors-list__btn-attendant"><i class="doctors-list__btn-icon fas fa-ambulance"></i>Дежурный</button>
-												<button class="btn doctors-list__btn doctors-list__btn-consultation"><i class="doctors-list__btn-icon fas fa-user-md"></i>Консультация</button>
-												<button class="btn doctors-list__btn doctors-list__btn-write"><i class="doctors-list__btn-icon fas fa-comments"></i>Написать</button>
+											<div class="doctors-list__btn buttons-doctors">
+												<button class="btn buttons-doctors__btn buttons-doctors__btn-attendant"><i class="buttons-doctors__btn-icon fas fa-ambulance"></i>Дежурный</button>
+												<button class="btn buttons-doctors__btn buttons-doctors__btn-consultation"><i class="buttons-doctors__btn-icon fas fa-user-md"></i>Консультация</button>
+												<button class="btn buttons-doctors__btn buttons-doctors__btn-write"><i class="buttons-doctors__btn-icon fas fa-comments"></i>Написать</button>
 											</div>
 										</div>
 									</div>
-									<div class="doctors-list__info"></div>
 
 									<!-- Modal -->
-									<div class="modal fade doctors-list__modal" id="doc-card-info-1" tabindex="-1" role="dialog" aria-hidden="true">
-										<div class="modal-dialog modal-lg modal-dialog-centered" role="document">
-											<div class="modal-content">
-												<div class="modal-header">
-													<h5 class="modal-title" id="exampleModalCenterTitle">Карточка доктора</h5>
+									<div id="doc-card-info-1" class="modal fade doctors-list__modal modal-doctors" tabindex="-1" aria-hidden="true">
+										<div class="modal-doctors__container modal-dialog modal-lg modal-dialog-centered">
+											<div class="modal-doctors__content modal-content">
+
+												<div class="modal-doctors__header modal-header">
+													<h5 class="modal-doctors__title modal-title">Карточка доктора</h5>
 													<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+														<!-- Экранировать &amp;times; -->
 														<span aria-hidden="true">&times;</span>
 													</button>
 												</div>
-												<div class="modal-body">
-													...
+
+												<div class="modal-doctors__body modal-body">
+													<div class="card-doctor">
+														<div class="card-doctor__header">
+															<div class="card-doctor__img-wrap">
+																<img src="img/test/doc-photo/doc1.jpg" class="card-doctor__img img-fluid" alt="">
+															</div>
+															<div class="card-doctor__meta">
+																<h4 class="card-doctor__meta-name">Иванов Иван Иванович</h4>
+																<div class="card-doctor__meta-doc">Хирург</div>
+															</div>
+														</div>
+														<div class="card-doctor__body">
+															<p>Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Большого текста большой залетают составитель? Последний рукописи грустный, безопасную, все власти продолжил выйти пустился однажды то, проектах, вопроса знаках он.</p>
+															<p>Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Его образ имени но от всех буквоград своего, свое города всеми свою, большой пустился текстов злых несколько которое? Щеке решила, диких?</p>
+															<p>Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Последний грустный, переписывается даже домах ему, скатился по всей оксмокс. Путь безопасную бросил образ коварный послушавшись. За рот пустился ipsum свое!</p>
+															<p>Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Силуэт, большого, снова. Города жаренные все, маленькая ему заглавных жизни знаках щеке о текста лучше алфавит текстов последний составитель если.</p>
+															<p>Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Если языком сих единственное решила текст ведущими агенство злых маленький, мир ipsum букв выйти грустный большого семь щеке, все имени.</p>
+														</div>
+													</div>
 												</div>
-												<div class="modal-footer">
-													<div class="doctors-list__wrap-btn">
-												<button class="btn doctors-list__btn doctors-list__btn-attendant"><i class="doctors-list__btn-icon fas fa-ambulance"></i>Дежурный</button>
-												<button class="btn doctors-list__btn doctors-list__btn-consultation"><i class="doctors-list__btn-icon fas fa-user-md"></i>Консультация</button>
-												<button class="btn doctors-list__btn doctors-list__btn-write"><i class="doctors-list__btn-icon fas fa-comments"></i>Написать</button>
-											</div>
+
+												<div class="modal-doctors__footer modal-footer">
+													<div class="modal-doctors__btn buttons-doctors">
+														<button class="btn buttons-doctors__btn buttons-doctors__btn-attendant"><i class="buttons-doctors__btn-icon fas fa-ambulance"></i>Дежурный</button>
+														<button class="btn buttons-doctors__btn buttons-doctors__btn-consultation"><i class="buttons-doctors__btn-icon fas fa-user-md"></i>Консультация</button>
+														<button class="btn buttons-doctors__btn buttons-doctors__btn-write"><i class="buttons-doctors__btn-icon fas fa-comments"></i>Написать</button>
+													</div>
 													<button type="button" class="btn btn-secondary" data-dismiss="modal">Закрыть</button>
 												</div>
+
 											</div>
 										</div>
 									</div>
 								</div>
 
-								<div class="doctors-list__item">
-									<div class="doctors-list__main">
-										<div class="doctors-list__item-left">
-											<div class="doctors-list__wrap-img">
-												<div class="doctors-list__img" style="background-image: url('img/test/doc-photo/doc2.jpg');"></div>
-											</div>
-										</div>
-										<div class="doctors-list__item-right">
-											<h4 class="doctors-list__name">Кузнецова Елена Сергеевна</h4>
-											<div class="doctors-list__doc">Хирург</div>
-											<div class="doctors-list__text">Занимается мануальной терапией больше 50 лет.</div>
-											<div class="doctors-list__wrap-btn">
-												<button class="btn doctors-list__btn doctors-list__btn-attendant"><i class="doctors-list__btn-icon fas fa-ambulance"></i>Дежурный</button>
-												<button class="btn doctors-list__btn doctors-list__btn-consultation"><i class="doctors-list__btn-icon fas fa-user-md"></i>Консультация</button>
-												<button class="btn doctors-list__btn doctors-list__btn-write"><i class="doctors-list__btn-icon fas fa-comments"></i>Написать</button>
-											</div>
-										</div>
-									</div>
-									<div class="doctors-list__info"></div>
-								</div>
-
-								<div class="doctors-list__item">
-									<div class="doctors-list__main">
-										<div class="doctors-list__item-left">
-											<div class="doctors-list__wrap-img">
-												<div class="doctors-list__img" style="background-image: url('img/test/doc-photo/doc1.jpg');"></div>
-											</div>
-										</div>
-										<div class="doctors-list__item-right">
-											<h4 class="doctors-list__name">Иванов Иван Иванович</h4>
-											<div class="doctors-list__doc">Хирург</div>
-											<div class="doctors-list__text">Кандидат медицинских наук. Врач высшей квалификационной категории. Стаж работы - 24 года. Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Страна, проектах. Единственное переписывается океана над, последний букв, рукопись до.</div>
-											<div class="doctors-list__wrap-btn">
-												<button class="btn doctors-list__btn doctors-list__btn-attendant"><i class="doctors-list__btn-icon fas fa-ambulance"></i>Дежурный</button>
-												<button class="btn doctors-list__btn doctors-list__btn-consultation"><i class="doctors-list__btn-icon fas fa-user-md"></i>Консультация</button>
-												<button class="btn doctors-list__btn doctors-list__btn-write"><i class="doctors-list__btn-icon fas fa-comments"></i>Написать</button>
-											</div>
-										</div>
-									</div>
-									<div class="doctors-list__info"></div>
-								</div>
-
-								<div class="doctors-list__item">
-									<div class="doctors-list__main">
-										<div class="doctors-list__item-left">
-											<div class="doctors-list__wrap-img">
-												<div class="doctors-list__img" style="background-image: url('img/test/doc-photo/doc2.jpg');"></div>
-											</div>
-										</div>
-										<div class="doctors-list__item-right">
-											<h4 class="doctors-list__name">Кузнецова Елена Сергеевна</h4>
-											<div class="doctors-list__doc">Хирург</div>
-											<div class="doctors-list__text">Занимается мануальной терапией больше 50 лет. Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Ты, безопасную они. Семантика рукописи толку они которой, одна букв, вопроса составитель вскоре реторический всемогущая ведущими ipsum прямо предупредила переулка?</div>
-											<div class="doctors-list__wrap-btn">
-												<button class="btn doctors-list__btn doctors-list__btn-attendant"><i class="doctors-list__btn-icon fas fa-ambulance"></i>Дежурный</button>
-												<button class="btn doctors-list__btn doctors-list__btn-consultation"><i class="doctors-list__btn-icon fas fa-user-md"></i>Консультация</button>
-												<button class="btn doctors-list__btn doctors-list__btn-write"><i class="doctors-list__btn-icon fas fa-comments"></i>Написать</button>
-											</div>
-										</div>
-									</div>
-									<div class="doctors-list__info"></div>
-								</div>
+								
 								
 							</div>
 
