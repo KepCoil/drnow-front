@@ -213,6 +213,11 @@
 @media only screen and (max-width : 575.98px)
 	html
 		font-size: 90%
+	.main-logo
+		width: 180px
+		&__text
+			display: none
+
 	.main-slider
 		&__slide-img
 			padding-top: 50%
@@ -226,10 +231,14 @@
 				left: 1rem
 			.owl-nav button.owl-next
 				right: 1rem
-	.main-logo
-		width: 180px
-		&__text
-			display: none
+	
+	.main-content-layour
+		&-inner-page
+			padding: 3rem 0
+		&__main-title
+			font-size: 2rem
+			margin-bottom: 2.5rem
+
 	.doctors-list
 		&__item-left
 			display: none
@@ -237,8 +246,26 @@
 		&__btn
 			margin-right: 0.5rem
 
-	
-			
+
+/* Small Devices - Phones, small display */
+@media only screen and (max-width : 479.98px)	
+	.card-doctor
+		&__header
+			flex-direction: column
+		&__img-wrap
+			margin-right: 0
+			margin-bottom: 1rem
+		&__meta
+			text-align: center
+			&-name
+				margin-bottom: 0.5rem
+	.modal-doctors
+		&__footer
+			display: block
+			justify-content: left
+		.btn.btn-secondary
+			margin-left: 0
+
 
 /* Small Devices - Phones, small display */
 @media only screen and (max-width : 419.98px)
@@ -260,9 +287,13 @@
 			margin-bottom: 0.5rem
 			&-icon
 				display: none
+	.buttons-doctors
+		margin-right: 0 !important
 
 @media only screen and (max-width : 359.98px)
 	.buttons-doctors
 		display: block
 		&__btn
 			padding: 0.4rem
+	.btn.btn-secondary
+		padding: 0.4rem
