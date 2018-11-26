@@ -1,9 +1,16 @@
 $(function() {
 
 	// Отступ от шапки
-	var mainHeader = $('.js-main-header').outerHeight();
-	$('.js-main-content-layour').css('margin-top', mainHeader);
+	// var mainHeader = $('.js-main-header').outerHeight();
+	// $('#wrap').css('margin-top', mainHeader);
 
+
+	// odoo top nav login
+	if ( $("nav").is("#oe_main_menu_navbar") ) {
+		userBlock = $('#oe_main_menu_navbar').outerHeight();
+		$('#main-header').css('top', userBlock);
+		$('#js-main-content-layour').css('margin-top', 0);
+	}
 
 	
 	// шапка при скролле
@@ -17,7 +24,7 @@ $(function() {
 					$(this).addClass('js-hidden-scroll');
 				});
 				$('.main-logo-col').addClass('js-main-logo-col');
-				$('.quick-links-col').addClass('js-quick-links-col');
+				$('.header-nav').addClass('js-header-nav-col');
 				$('.main-nav').addClass('margin-top-null');
 				$('.go-call').addClass('margin-top-null');
 				$('.main-header__row').addClass('flex-align-items-vertica-center');
@@ -27,7 +34,7 @@ $(function() {
 					$(this).removeClass('js-hidden-scroll');
 				});
 				$('.main-logo-col').removeClass('js-main-logo-col');
-				$('.quick-links-col').removeClass('js-quick-links-col');
+				$('.header-nav').removeClass('js-header-nav-col');
 				$('.main-nav').removeClass('margin-top-null');
 				$('.go-call').removeClass('margin-top-null');
 				$('.main-header__row').removeClass('flex-align-items-vertica-center');

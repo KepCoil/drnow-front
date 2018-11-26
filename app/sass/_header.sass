@@ -3,11 +3,11 @@
 		display: none 
 
 	.js-main-logo-col
-		flex: 0 0 16.66667%
-		max-width: 16.66667%
-	.js-quick-links-col
-		flex: 0 0 58.33333%
-		max-width: 58.33333%
+		flex: 0 0 20%
+		max-width: 20%
+	.js-header-nav-col
+		flex: 0 0 80%
+		max-width: 80%
 	.margin-top-null
 		margin-top: 0
 	.flex-align-items-vertica-center
@@ -65,15 +65,27 @@
 		list-style-type: none
 		margin: 0
 		padding: 0
-	&__item
-		&-link
-			color: $default-color
-			text-transform: uppercase
-			padding: 0.75rem 1rem
-			font-size: 1.125rem
-			font-weight: 700
-			&:hover
-				text-decoration: none
+	.nav-item
+		-ms-flex-preferred-size: 0
+		flex-basis: 0
+		-ms-flex-positive: 1
+		flex-grow: 1
+		max-width: 100%
+
+#top_menu
+	.nav-item.divider
+		display: none !important
+
+.main-nav .main-nav__item-link,
+.main-nav .nav-link
+	color: $default-color
+	text-transform: uppercase
+	padding: 0.75rem 1rem
+	font-size: 1.125rem
+	font-weight: 700
+	&:hover
+		text-decoration: none
+		color: $red
 
 .go-call
 	margin-top: 36px

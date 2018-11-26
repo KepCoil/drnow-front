@@ -10,7 +10,7 @@
 	<meta name="description" content="" />
 	<meta name="keywords" content=""/>
 	
-	<link href="https://fonts.googleapis.com/css?family=Roboto:400,400i,500,700&amp;subset=cyrillic" rel="stylesheet" />
+	<!-- <link href="https://fonts.googleapis.com/css?family=Roboto:400,400i,500,700&amp;subset=cyrillic" rel="stylesheet" /> -->
 	<link href="libs/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
 	<link href="libs/fontawesome/css/all.min.css" rel="stylesheet"/>
 	<link href="libs/owl-carousel/dist/assets/owl.carousel.min.css" rel="stylesheet" />
@@ -20,4 +20,4 @@
 </head>
 <body>
 
-	<div id="wrapwrap">
+	<div id="wrapwrap" class="homepage">

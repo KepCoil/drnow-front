@@ -53,28 +53,22 @@
 			</div>
 		</div>
 
-		<!-- 
-			В данном блоке строгая структура. 
-			1. Разный размер колонок
-			2. Первая колонка прижата к правому краю. Вторая - по центру. Третья - по левому
-		-->
+
 		<div class="footer-btn">
 			<div class="container">
 				<div class="row">
 
-					<div class="col-md-3 footer-btn__col">
-						<a href="#" class="footer-btn__link"><i class="fas fa-user-tag footer-btn__icon"></i>Мед.карта</a>
-					</div>
 					<div class="col-md-6 footer-btn__col">
 						<a href="#" class="footer-btn__link"><i class="fas fa-comments footer-btn__icon"></i>Тех.поддержка</a>
 					</div>
-					<div class="col-md-3 footer-btn__col">
-						<a href="#" class="footer-btn__link"><i class="fas fa-phone footer-btn__icon"></i>8-800-2000-600</a>
+					<div class="col-md-6 footer-btn__col">
+						<a href="tel:8-800-2000-600" class="footer-btn__link"><i class="fas fa-phone footer-btn__icon"></i>8-800-2000-600</a>
 					</div>
 
 				</div>
 			</div>
 		</div>
+		
 	</div>
 
 

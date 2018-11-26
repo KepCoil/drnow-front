@@ -29,10 +29,6 @@
 				text-align: left
 				vertical-align: top
 
-.home-articles
-	&__col
-		margin-bottom: 5rem
-
 .doctors-list
 	&__search
 		&-wrap
@@ -121,6 +117,9 @@
 
 .buttons-doctors
 	display: flex
+	width: 100%
+	flex-flow: row wrap
+	margin-right: 0 !important
 	&__btn
 		margin-right: 1rem
 		color: #fff
@@ -134,6 +133,14 @@
 			margin-right: 0
 		&-icon
 			margin-right: 0.375rem
+		&-close
+			margin-left: auto
+			background-color: #6c757d
+			border-color: #6c757d
+			&:hover, &:focus, &:active
+				background-color: #6c757d
+				border-color: #6c757d
+
 
 .modal-doctors
 	&__title

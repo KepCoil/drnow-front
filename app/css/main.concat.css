@@ -30,7 +30,9 @@ p {
 h1, h2, h3, h4, h5, h6,
 .h1, .h2, .h3, .h4, .h5, .h6 {
   color: #212529;
-  letter-spacing: 0.2rem; }
+  letter-spacing: 0.2rem;
+  font-family: 'Roboto';
+  font-weight: 500; }
 
 h1, .h1 {
   font-size: 2.5rem;
@@ -62,6 +64,11 @@ ul, ol {
 
 #wrapwrap {
   position: relative; }
+  #wrapwrap.homepage #wrap {
+    padding: 0; }
+
+#wrap {
+  padding: 5rem 0; }
 
 #main-content-layour {
   position: relative;
@@ -84,17 +91,17 @@ ul, ol {
 
 .main-header .js-main-logo-col {
   -webkit-box-flex: 0;
-  -webkit-flex: 0 0 16.66667%;
-      -ms-flex: 0 0 16.66667%;
-          flex: 0 0 16.66667%;
-  max-width: 16.66667%; }
+  -webkit-flex: 0 0 20%;
+      -ms-flex: 0 0 20%;
+          flex: 0 0 20%;
+  max-width: 20%; }
 
-.main-header .js-quick-links-col {
+.main-header .js-header-nav-col {
   -webkit-box-flex: 0;
-  -webkit-flex: 0 0 58.33333%;
-      -ms-flex: 0 0 58.33333%;
-          flex: 0 0 58.33333%;
-  max-width: 58.33333%; }
+  -webkit-flex: 0 0 80%;
+      -ms-flex: 0 0 80%;
+          flex: 0 0 80%;
+  max-width: 80%; }
 
 .main-header .margin-top-null {
   margin-top: 0; }
@@ -165,14 +172,30 @@ ul, ol {
     list-style-type: none;
     margin: 0;
     padding: 0; }
-  .main-nav__item-link {
-    color: #212529;
-    text-transform: uppercase;
-    padding: 0.75rem 1rem;
-    font-size: 1.125rem;
-    font-weight: 700; }
-    .main-nav__item-link:hover {
-      text-decoration: none; }
+  .main-nav .nav-item {
+    -ms-flex-preferred-size: 0;
+    -webkit-flex-basis: 0;
+            flex-basis: 0;
+    -ms-flex-positive: 1;
+    -webkit-box-flex: 1;
+    -webkit-flex-grow: 1;
+            flex-grow: 1;
+    max-width: 100%; }
+
+#top_menu .nav-item.divider {
+  display: none !important; }
+
+.main-nav .main-nav__item-link,
+.main-nav .nav-link {
+  color: #212529;
+  text-transform: uppercase;
+  padding: 0.75rem 1rem;
+  font-size: 1.125rem;
+  font-weight: 700; }
+  .main-nav .main-nav__item-link:hover,
+  .main-nav .nav-link:hover {
+    text-decoration: none;
+    color: #dc3545; }
 
 .go-call {
   margin-top: 36px;
@@ -674,14 +697,8 @@ ul, ol {
     .footer-links__link:hover {
       color: #fff; }
 
-.footer-btn__col:first-child {
-  text-align: right; }
-
-.footer-btn__col:nth-child(2) {
+.footer-btn__col {
   text-align: center; }
-
-.footer-btn__col:last-child {
-  text-align: left; }
 
 .footer-btn__link {
   font-size: 1.125rem;
@@ -737,9 +754,6 @@ ul, ol {
       line-height: inherit;
       text-align: left;
       vertical-align: top; }
-
-.home-articles__col {
-  margin-bottom: 5rem; }
 
 .doctors-list__search-wrap {
   background-color: #aaa;
@@ -846,7 +860,14 @@ ul, ol {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
-  display: flex; }
+  display: flex;
+  width: 100%;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-flow: row wrap;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  margin-right: 0 !important; }
   .buttons-doctors__btn {
     margin-right: 1rem;
     color: #fff; }
@@ -860,6 +881,13 @@ ul, ol {
       margin-right: 0; }
     .buttons-doctors__btn-icon {
       margin-right: 0.375rem; }
+    .buttons-doctors__btn-close {
+      margin-left: auto;
+      background-color: #6c757d;
+      border-color: #6c757d; }
+      .buttons-doctors__btn-close:hover, .buttons-doctors__btn-close:focus, .buttons-doctors__btn-close:active {
+        background-color: #6c757d;
+        border-color: #6c757d; }
 
 .modal-doctors__title {
   color: #dc3545;
@@ -921,24 +949,10 @@ ul, ol {
     font-size: 85%; }
   main#main-content-layour {
     margin-top: 90px; }
-  .main-header .js-main-logo-col {
-    -webkit-box-flex: 0;
-    -webkit-flex: 0 0 16.66667%;
-        -ms-flex: 0 0 16.66667%;
-            flex: 0 0 16.66667%;
-    max-width: 16.66667%; }
-  .main-header .js-quick-links-col {
-    -webkit-box-flex: 0;
-    -webkit-flex: 0 0 50%;
-        -ms-flex: 0 0 50%;
-            flex: 0 0 50%;
-    max-width: 50%; }
   .main-logo__text {
     letter-spacing: 0.2rem; }
   .main-nav {
     margin-top: 35px; }
-  .go-call {
-    margin-top: 26px; }
   .main-slider__slide-img {
     padding-top: 40%; }
   .main-slider__slide-content-title {
@@ -997,7 +1011,7 @@ ul, ol {
     .home-sect__main-title {
       margin-bottom: 3rem; }
   .main-logo {
-    max-width: 250px; }
+    width: 200px; }
     .main-logo-col {
       display: -webkit-box;
       display: -webkit-flex;
@@ -1011,8 +1025,9 @@ ul, ol {
       -webkit-justify-content: space-between;
           -ms-flex-pack: justify;
               justify-content: space-between; }
-  .go-call {
-    text-align: center; }
+  .header-nav,
+  .main-logo__text {
+    display: none; }
   .preview {
     padding-top: 0; }
     .preview__small-info {
@@ -1096,10 +1111,6 @@ ul, ol {
 @media only screen and (max-width: 575.98px) {
   html {
     font-size: 90%; }
-  .main-logo {
-    width: 180px; }
-    .main-logo__text {
-      display: none; }
   .main-slider__slide-img {
     padding-top: 50%; }
   .main-slider__slide-content-title {
@@ -1143,29 +1154,27 @@ ul, ol {
         -ms-flex-pack: left;
             justify-content: left; }
   .modal-doctors .btn.btn-secondary {
-    margin-left: 0; } }
-
-/* Small Devices - Phones, small display */
-@media only screen and (max-width: 419.98px) {
-  html {
-    font-size: 85%; }
-  .end-footer__link {
-    display: block; }
-    .end-footer__link:first-child {
-      margin-bottom: 1rem; }
-  .end-footer__sep {
-    display: none; }
-  .main-logo {
-    width: 140px; }
+    margin-left: 0; }
   .buttons-doctors {
     display: block; }
     .buttons-doctors__btn {
       margin-right: 0.25rem;
       margin-bottom: 0.5rem; }
       .buttons-doctors__btn-icon {
-        display: none; }
-  .buttons-doctors {
-    margin-right: 0 !important; } }
+        display: none; } }
+
+/* Small Devices - Phones, small display */
+@media only screen and (max-width: 419.98px) {
+  html {
+    font-size: 85%; }
+  .main-logo {
+    width: 140px; }
+  .end-footer__link {
+    display: block; }
+    .end-footer__link:first-child {
+      margin-bottom: 1rem; }
+  .end-footer__sep {
+    display: none; } }
 
 @media only screen and (max-width: 359.98px) {
   .buttons-doctors {
