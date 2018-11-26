@@ -169,4 +169,93 @@
 			color: $light
 			font-size: 1rem
 	
-				
+.calendar-price
+
+	&__header
+		
+		margin-bottom: 5rem
+		&-left
+			margin-right: 1rem
+		&-title
+			color: $red
+			margin-bottom: 3rem
+		&-container
+			display: flex
+			align-items: center
+	&__doc
+		&-photo
+			width: 7rem
+			height: 7rem
+			border-radius: 50%
+			overflow: hidden
+		&-name
+			color: $red
+			font-weight: 500
+			font-size: 1.25rem
+			margin-bottom: 0.2rem
+		&-staff
+			color: $light
+	
+
+	&__item
+		margin-bottom: 5rem
+		display: flex
+		width: 100%
+
+		&-left
+			border-right: 1px solid #ddd
+			padding-right: 2rem
+			flex: 0 0 20%
+			max-width: 20%
+		&-right
+			padding-left: 2rem
+			flex: 0 0 80%
+			max-width: 80%
+	&__date
+		display: flex
+		align-items: center
+		&-number
+			padding: 0.25em 0.4em
+			background-color: $red
+			color: #fff
+			font-size: 2rem
+			font-weight: 700
+			border-radius: 0.5rem
+			margin-right: 0.75rem
+		&-detail
+			&-weekday
+				margin-bottom: 0.1rem
+			&-month-year
+				display: flex
+				color: #777
+			&-month
+				margin-right: 5px
+				&::after
+					content: ','
+	&__info
+		align-items: center
+		margin-bottom: 1rem
+		border-bottom: 1px solid #ddd
+		padding-bottom: 1rem
+		&:last-child
+			margin-bottom: 0
+			border-bottom: 0
+			padding-bottom: 0
+		&-row
+			&-header
+				.calendar-price__info-col
+					font-weight: 500
+		&-col
+			
+		&-price
+
+		&-btn
+			color: #fff
+			margin-right: 0.75rem
+			&:last-child
+				margin-right: 0
+			&-audio
+				background-color: $green
+			&-video
+				background-color: $blue
+			

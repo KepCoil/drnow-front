@@ -63,23 +63,46 @@ ul, ol {
   padding-left: 2.5rem; }
 
 #wrapwrap {
-  position: relative; }
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100%; }
   #wrapwrap.homepage #wrap {
     padding: 0; }
 
 #wrap {
   padding: 5rem 0; }
 
-#main-content-layour {
+header#main-header {
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 0 auto;
+      -ms-flex: 0 0 auto;
+          flex: 0 0 auto; }
+
+main#main-content-layour {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1 0 auto;
+      -ms-flex: 1 0 auto;
+          flex: 1 0 auto;
   position: relative;
   margin-top: 130px; }
-
-.main-content-layour-inner-page {
-  padding: 5rem 0; }
-  .main-content-layour-inner-page__main-title {
+  main#main-content-layour__main-title {
     margin-top: 0;
     margin-bottom: 3rem;
     color: #dc3545; }
+
+footer#main-footer {
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 0 auto;
+      -ms-flex: 0 0 auto;
+          flex: 0 0 auto; }
 
 .alert, .btn, .dropdown, .message, .message.error, .message.required, .transition, [class="col-*"], [data-target], a, a.fab, a .fab, a.far, a .far, a.fas, a .fas, a img, button, button.fab, button .fab, button.far, button .far, button.fas, button .fas, input, optgroup, select, textarea {
   -webkit-transition: all 0.4s ease-out;
@@ -926,6 +949,117 @@ ul, ol {
 .card-doctor__meta-doc {
   color: #6c757d;
   font-size: 1rem; }
+
+.calendar-price__header {
+  margin-bottom: 5rem; }
+  .calendar-price__header-left {
+    margin-right: 1rem; }
+  .calendar-price__header-title {
+    color: #dc3545;
+    margin-bottom: 3rem; }
+  .calendar-price__header-container {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center; }
+
+.calendar-price__doc-photo {
+  width: 7rem;
+  height: 7rem;
+  -webkit-border-radius: 50%;
+          border-radius: 50%;
+  overflow: hidden; }
+
+.calendar-price__doc-name {
+  color: #dc3545;
+  font-weight: 500;
+  font-size: 1.25rem;
+  margin-bottom: 0.2rem; }
+
+.calendar-price__doc-staff {
+  color: #6c757d; }
+
+.calendar-price__item {
+  margin-bottom: 5rem;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%; }
+  .calendar-price__item-left {
+    border-right: 1px solid #ddd;
+    padding-right: 2rem;
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 20%;
+        -ms-flex: 0 0 20%;
+            flex: 0 0 20%;
+    max-width: 20%; }
+  .calendar-price__item-right {
+    padding-left: 2rem;
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 80%;
+        -ms-flex: 0 0 80%;
+            flex: 0 0 80%;
+    max-width: 80%; }
+
+.calendar-price__date {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center; }
+  .calendar-price__date-number {
+    padding: 0.25em 0.4em;
+    background-color: #dc3545;
+    color: #fff;
+    font-size: 2rem;
+    font-weight: 700;
+    -webkit-border-radius: 0.5rem;
+            border-radius: 0.5rem;
+    margin-right: 0.75rem; }
+  .calendar-price__date-detail-weekday {
+    margin-bottom: 0.1rem; }
+  .calendar-price__date-detail-month-year {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    color: #777; }
+  .calendar-price__date-detail-month {
+    margin-right: 5px; }
+    .calendar-price__date-detail-month::after {
+      content: ','; }
+
+.calendar-price__info {
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 1rem;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 1rem; }
+  .calendar-price__info:last-child {
+    margin-bottom: 0;
+    border-bottom: 0;
+    padding-bottom: 0; }
+  .calendar-price__info-row-header .calendar-price__info-col {
+    font-weight: 500; }
+  .calendar-price__info-btn {
+    color: #fff;
+    margin-right: 0.75rem; }
+    .calendar-price__info-btn:last-child {
+      margin-right: 0; }
+    .calendar-price__info-btn-audio {
+      background-color: #2e7d32; }
+    .calendar-price__info-btn-video {
+      background-color: #19456b; }
 
 /*==========  Desktop First Method  ==========*/
 /* Large Devices, Wide Screens */

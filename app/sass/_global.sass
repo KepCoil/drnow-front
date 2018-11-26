@@ -60,25 +60,30 @@ ul, ol
 
 #wrapwrap
 	position: relative
+	display: flex
+	flex-direction: column
+	height: 100%
 	&.homepage
 		#wrap
 			padding: 0
 #wrap
 	padding: 5rem 0
 
-#main-content-layour
+header#main-header
+	flex: 0 0 auto
+
+main#main-content-layour
+	flex: 1 0 auto
 	position: relative
 	margin-top: 130px
+	&__main-title
+		margin-top: 0
+		margin-bottom: 3rem
+		color: $red
 
-.main-content-layour
-	&-home-page
-
-	&-inner-page
-		padding: 5rem 0
-		&__main-title
-			margin-top: 0
-			margin-bottom: 3rem
-			color: $red
+footer#main-footer
+	flex: 0 0 auto
+	
 
 .alert, .btn, .dropdown, .message, .message.error, .message.required, .transition, [class="col-*"], [data-target], a, a.fab, a .fab, a.far, a .far, a.fas, a .fas, a img, button, button.fab, button .fab, button.far, button .far, button.fas, button .fas, input, optgroup, select, textarea
 	transition: all 0.4s ease-out

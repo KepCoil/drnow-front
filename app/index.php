@@ -2,7 +2,7 @@
 <?php include("_header.php") ?>
 
 
-<main id="main-content-layour" class="js-main-content-layour main-content-layour main-content-layour-home-page">
+<main id="main-content-layour" class="js-main-content-layour main-content-layour">
 
 	<div id="wrap">
 
