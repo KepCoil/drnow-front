@@ -20,8 +20,8 @@ gulp.task('browser-sync', function() {
 		port: '3030',
 
 		// server: {baseDir: 'app'},
-		proxy: 'drnow', //window openserver local server
-		// proxy: 'drnow.front', //lampp local server
+		// proxy: 'drnow', //window openserver local server
+		proxy: 'drnow.front', //lampp local server
 		
 	});
 });

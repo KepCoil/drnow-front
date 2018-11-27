@@ -43,12 +43,12 @@
 						</div>
 
 						<div class="calendar-price__item-right">
-							<div class="row calendar-price__info calendar-price__info-row-header">
+							<div class="row calendar-price__info-row calendar-price__info-row-header">
 								<div class="col calendar-price__info-col">Время</div>
 								<div class="col calendar-price__info-col">Цена (руб.)</div>
 								<div class="col calendar-price__info-col">Тип консультации</div>
 							</div>
-							<div class="row calendar-price__info">
+							<div class="row calendar-price__info-row">
 								<div class="col calendar-price__info-col">
 									<div class="calendar-price__info-time">11:00 - 12:00</div>
 								</div>
@@ -56,14 +56,14 @@
 									<div class="calendar-price__info-price">1200</div>
 								</div>
 								<div class="col calendar-price__info-col">
-									<div class="calendar-price__info-btn">
+									<div class="calendar-price__info-btn-wrap">
 										<button class="btn calendar-price__info-btn calendar-price__info-btn-audio">Аудио</button>
 										<button class="btn calendar-price__info-btn calendar-price__info-btn-video">Видео</button>
 									</div>
 								</div>
 							</div>
 
-							<div class="row calendar-price__info">
+							<div class="row calendar-price__info-row">
 								<div class="col calendar-price__info-col">
 									<div class="calendar-price__info-time">11:00 - 12:00</div>
 								</div>
@@ -71,14 +71,14 @@
 									<div class="calendar-price__info-price">1200</div>
 								</div>
 								<div class="col calendar-price__info-col">
-									<div class="calendar-price__info-btn">
+									<div class="calendar-price__info-btn-wrap">
 										<button class="btn calendar-price__info-btn calendar-price__info-btn-audio">Аудио</button>
 										<button class="btn calendar-price__info-btn calendar-price__info-btn-video">Видео</button>
 									</div>
 								</div>
 							</div>
 
-							<div class="row calendar-price__info">
+							<div class="row calendar-price__info-row">
 								<div class="col calendar-price__info-col">
 									<div class="calendar-price__info-time">11:00 - 12:00</div>
 								</div>
@@ -86,7 +86,7 @@
 									<div class="calendar-price__info-price">1200</div>
 								</div>
 								<div class="col calendar-price__info-col">
-									<div class="calendar-price__info-btn">
+									<div class="calendar-price__info-btn-wrap">
 										<button class="btn calendar-price__info-btn calendar-price__info-btn-audio">Аудио</button>
 										<button class="btn calendar-price__info-btn calendar-price__info-btn-video">Видео</button>
 									</div>
@@ -115,13 +115,13 @@
 						</div>
 
 						<div class="calendar-price__item-right">
-							<div class="row calendar-price__info calendar-price__info-row-header">
+							<div class="row calendar-price__info-row calendar-price__info-row-header">
 								<div class="col calendar-price__info-col">Время</div>
 								<div class="col calendar-price__info-col">Цена (руб.)</div>
 								<div class="col calendar-price__info-col">Тип консультации</div>
 							</div>
 
-							<div class="row calendar-price__info">
+							<div class="row calendar-price__info-row">
 								<div class="col calendar-price__info-col">
 									<div class="calendar-price__info-time">11:00 - 12:00</div>
 								</div>
@@ -129,14 +129,14 @@
 									<div class="calendar-price__info-price">1200</div>
 								</div>
 								<div class="col calendar-price__info-col">
-									<div class="calendar-price__info-btn">
+									<div class="calendar-price__info-btn-wrap">
 										<button class="btn calendar-price__info-btn calendar-price__info-btn-audio">Аудио</button>
 										<button class="btn calendar-price__info-btn calendar-price__info-btn-video">Видео</button>
 									</div>
 								</div>
 							</div>
 
-							<div class="row calendar-price__info">
+							<div class="row calendar-price__info-row">
 								<div class="col calendar-price__info-col">
 									<div class="calendar-price__info-time">11:00 - 12:00</div>
 								</div>
@@ -144,7 +144,7 @@
 									<div class="calendar-price__info-price">1200</div>
 								</div>
 								<div class="col calendar-price__info-col">
-									<div class="calendar-price__info-btn">
+									<div class="calendar-price__info-btn-wrap">
 										<button class="btn calendar-price__info-btn calendar-price__info-btn-audio">Аудио</button>
 										<button class="btn calendar-price__info-btn calendar-price__info-btn-video">Видео</button>
 									</div>
@@ -173,13 +173,13 @@
 						</div>
 
 						<div class="calendar-price__item-right">
-							<div class="row calendar-price__info calendar-price__info-row-header">
+							<div class="row calendar-price__info-row calendar-price__info-row-header">
 								<div class="col calendar-price__info-col">Время</div>
 								<div class="col calendar-price__info-col">Цена (руб.)</div>
 								<div class="col calendar-price__info-col">Тип консультации</div>
 							</div>
 
-							<div class="row calendar-price__info">
+							<div class="row calendar-price__info-row">
 								<div class="col calendar-price__info-col">
 									<div class="calendar-price__info-time">11:00 - 12:00</div>
 								</div>
@@ -187,7 +187,7 @@
 									<div class="calendar-price__info-price">1200</div>
 								</div>
 								<div class="col calendar-price__info-col">
-									<div class="calendar-price__info-btn">
+									<div class="calendar-price__info-btn-wrap">
 										<button class="btn calendar-price__info-btn calendar-price__info-btn-audio">Аудио</button>
 										<button class="btn calendar-price__info-btn calendar-price__info-btn-video">Видео</button>
 									</div>

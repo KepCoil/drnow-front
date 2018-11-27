@@ -170,14 +170,13 @@
 			font-size: 1rem
 	
 .calendar-price
-
 	&__header
-		
 		margin-bottom: 5rem
 		&-left
 			margin-right: 1rem
 		&-title
 			color: $red
+			margin-top: 0
 			margin-bottom: 3rem
 		&-container
 			display: flex
@@ -233,25 +232,28 @@
 				&::after
 					content: ','
 	&__info
-		align-items: center
-		margin-bottom: 1rem
-		border-bottom: 1px solid #ddd
-		padding-bottom: 1rem
-		&:last-child
-			margin-bottom: 0
-			border-bottom: 0
-			padding-bottom: 0
 		&-row
+			margin: 0
+			align-items: center
+			margin-bottom: 1rem
+			border-bottom: 1px solid #ddd
+			padding-bottom: 1rem
 			&-header
 				.calendar-price__info-col
 					font-weight: 500
+			&:last-child
+				margin-bottom: 0
+				border-bottom: 0
+				padding-bottom: 0
+		
 		&-col
-			
+			padding: 0
 		&-price
 
 		&-btn
 			color: #fff
 			margin-right: 0.75rem
+			mb
 			&:last-child
 				margin-right: 0
 			&-audio

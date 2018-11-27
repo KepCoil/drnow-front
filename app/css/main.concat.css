@@ -36,15 +36,16 @@ h1, h2, h3, h4, h5, h6,
 
 h1, .h1 {
   font-size: 2.5rem;
-  margin: 3.5rem 0 1rem 0; }
+  margin: 3rem 0 1rem 0; }
 
 h2, .h2 {
+  color: #dc3545;
   font-size: 2.25rem;
-  margin: 3rem 0 1rem 0; }
+  margin: 2.5rem 0 1rem 0; }
 
 h3, .h3 {
   font-size: 1.75rem;
-  margin: 2.5rem 0 1rem 0; }
+  margin: 2.25rem 0 1rem 0; }
 
 h4, .h4 {
   font-size: 1.5rem;
@@ -78,7 +79,7 @@ ul, ol {
     padding: 0; }
 
 #wrap {
-  padding: 5rem 0; }
+  padding: 3rem 0; }
 
 header#main-header {
   -webkit-box-flex: 0;
@@ -956,6 +957,7 @@ footer#main-footer {
     margin-right: 1rem; }
   .calendar-price__header-title {
     color: #dc3545;
+    margin-top: 0;
     margin-bottom: 3rem; }
   .calendar-price__header-container {
     display: -webkit-box;
@@ -1037,7 +1039,8 @@ footer#main-footer {
     .calendar-price__date-detail-month::after {
       content: ','; }
 
-.calendar-price__info {
+.calendar-price__info-row {
+  margin: 0;
   -webkit-box-align: center;
   -webkit-align-items: center;
       -ms-flex-align: center;
@@ -1045,27 +1048,33 @@ footer#main-footer {
   margin-bottom: 1rem;
   border-bottom: 1px solid #ddd;
   padding-bottom: 1rem; }
-  .calendar-price__info:last-child {
+  .calendar-price__info-row-header .calendar-price__info-col {
+    font-weight: 500; }
+  .calendar-price__info-row:last-child {
     margin-bottom: 0;
     border-bottom: 0;
     padding-bottom: 0; }
-  .calendar-price__info-row-header .calendar-price__info-col {
-    font-weight: 500; }
-  .calendar-price__info-btn {
-    color: #fff;
-    margin-right: 0.75rem; }
-    .calendar-price__info-btn:last-child {
-      margin-right: 0; }
-    .calendar-price__info-btn-audio {
-      background-color: #2e7d32; }
-    .calendar-price__info-btn-video {
-      background-color: #19456b; }
+
+.calendar-price__info-col {
+  padding: 0; }
+
+.calendar-price__info-btn {
+  color: #fff;
+  margin-right: 0.75rem; }
+  .calendar-price__info-btn:last-child {
+    margin-right: 0; }
+  .calendar-price__info-btn-audio {
+    background-color: #2e7d32; }
+  .calendar-price__info-btn-video {
+    background-color: #19456b; }
 
 /*==========  Desktop First Method  ==========*/
 /* Large Devices, Wide Screens */
 @media only screen and (max-width: 1199.98px) {
   html {
     font-size: 90%; }
+  #main-content-layour {
+    margin-top: 110px; }
   .path-arrows__item:first-child .path-arrows__content {
     margin-left: 35px; }
   .path-arrows__content {
@@ -1074,14 +1083,24 @@ footer#main-footer {
     margin-right: 45px; }
     .path-arrows__content-icon {
       font-size: 1.5rem; }
-  main#main-content-layour {
-    margin-top: 110px; } }
+  .calendar-price__item-left {
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 25%;
+        -ms-flex: 0 0 25%;
+            flex: 0 0 25%;
+    max-width: 25%; }
+  .calendar-price__item-right {
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 75%;
+        -ms-flex: 0 0 75%;
+            flex: 0 0 75%;
+    max-width: 75%; } }
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width: 991.98px) {
   html {
     font-size: 85%; }
-  main#main-content-layour {
+  #main-content-layour {
     margin-top: 90px; }
   .main-logo__text {
     letter-spacing: 0.2rem; }
@@ -1115,7 +1134,19 @@ footer#main-footer {
     width: 7rem; }
   .buttons-doctors__btn {
     padding: 0.3rem 0.6rem;
-    font-size: 0.9375rem; } }
+    font-size: 0.9375rem; }
+  .calendar-price__item-left {
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 27%;
+        -ms-flex: 0 0 27%;
+            flex: 0 0 27%;
+    max-width: 27%; }
+  .calendar-price__item-right {
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 73%;
+        -ms-flex: 0 0 73%;
+            flex: 0 0 73%;
+    max-width: 73%; } }
 
 @media only screen and (max-width: 991.98px) and (min-width: 768px) {
   .main-header__container {
@@ -1239,7 +1270,24 @@ footer#main-footer {
     margin-bottom: 15px; }
     .doctors-list__nav-list {
       height: 150px;
-      overflow-y: scroll; } }
+      overflow-y: scroll; }
+  .calendar-price__item {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-bottom: 3rem; }
+    .calendar-price__item-left, .calendar-price__item-right {
+      padding: 0;
+      -webkit-box-flex: 0;
+      -webkit-flex: 0 0 100%;
+          -ms-flex: 0 0 100%;
+              flex: 0 0 100%;
+      max-width: 100%; }
+    .calendar-price__item-left {
+      border-right: none;
+      margin-bottom: 1.5rem; } }
 
 /* Small Devices - Phones, large display */
 @media only screen and (max-width: 575.98px) {
@@ -1295,7 +1343,10 @@ footer#main-footer {
       margin-right: 0.25rem;
       margin-bottom: 0.5rem; }
       .buttons-doctors__btn-icon {
-        display: none; } }
+        display: none; }
+  .calendar-price__info-btn {
+    margin-right: 0;
+    margin-bottom: 0.75rem; } }
 
 /* Small Devices - Phones, small display */
 @media only screen and (max-width: 419.98px) {

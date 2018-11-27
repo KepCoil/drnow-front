@@ -1,19 +1,25 @@
 $(function() {
 
-	// Отступ от шапки
-	// var mainHeader = $('.js-main-header').outerHeight();
-	// $('#wrap').css('margin-top', mainHeader);
+	function goMarginHeader() {
+		// Отступ от шапки основного контента
+		var mainHeader = $('.js-main-header').outerHeight();
+		$('.js-main-content-layour').css('margin-top', mainHeader);
 
 
-	// odoo top nav login
-	if ( $("nav").is("#oe_main_menu_navbar") ) {
-		userBlock = $('#oe_main_menu_navbar').outerHeight();
-		$('#main-header').css('top', userBlock);
-		$('#js-main-content-layour').css('margin-top', 0);
+		// отступ от меню odoo
+		if ( $("nav").is("#oe_main_menu_navbar") ) {
+			userBlock = $('#oe_main_menu_navbar').outerHeight();
+			$('#main-header').css('top', userBlock);
+			$('#js-main-content-layour').css('margin-top', 0);
+		}
 	}
+	
+	goMarginHeader();
 
 	
-	// шапка при скролле
+
+	
+	// Изменение шапки при скролле
 	function resizeMainHeader() {
 		var scrollTopNum = $(window).scrollTop();
 
@@ -72,9 +78,7 @@ $(function() {
 			
 	});
 
-	function resizeDoctorListMobile() {
-		
-	}
+
 
 	$(".doctors-list__nav-item-disable >a").click(function(e) {
 		e.preventDefault;
@@ -84,7 +88,7 @@ $(function() {
 
 
 
-	// Слайдера
+	// Основной слайдер на главной странице
 	$('#js-main-slider').owlCarousel({
 		items: 1,
 		loop: true,
@@ -94,6 +98,7 @@ $(function() {
 	});
 
 
+	// Слайдер ведущие врачи на главной страницы
 	$('#js-key-doctors').owlCarousel({
 		items: 3,
 		margin: 25,
@@ -112,6 +117,15 @@ $(function() {
 	$(window).scroll(function() {
 		resizeMainHeader();
 	});
+
+	
+
+	// Код при изменение размера  страницы
+	$(window).resize(function() {
+		goMarginHeader();
+	});
+
+
 
 
 });
