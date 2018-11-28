@@ -1,47 +1,79 @@
 .mobile-menu-btn
-	height: 44px
-	width: 44px
+	position: relative
 	z-index: 5
-	overflow: hidden
-	text-indent: 100%
-	white-space: nowrap
-	background-color: #eee
 	&__link
-		position: relative
 		display: block
-		height: 100%
+		width: 45px
+		height: 45px
 		background-color: $red
 		border-radius: 50%
-		width: 100%
-		height: 100%
-		// &::before
-		// 	content: ''
-		// 	padding: 20px
-		// 	position: absolute
-		// 	top: 0
-		// 	left: 0
-		// 	right: 0
-		// 	bottom: 0
-		// 	border-radius: 50%
-		// 	height: 100%
-		// 	width: 100%
-		// 	background-color: $red
-	&__line-btn
-		// position: absolute
-		display: inline-block
-		width: 20px
-		height: 3px
+		position: relative
+		&-active
+			.mobile-menu-btn__line-btn
+				background-color: transparent
+			.mobile-menu-btn__line-btn::before
+				transform: rotate(45deg)
+				margin-top: 0
+			.mobile-menu-btn__line-btn::after
+				transform: rotate(-45deg)
+				margin-top: 0
+	&__line-btn, 
+	&__line-btn::before, 
+	&__line-btn::after
+		display: block
+		position: absolute
 		background-color: #fff
-		z-index: 10
-		// &::before, &::after
-		// 	content: ''
-		// 	// position: absolute
-		// 	top: 0
-		// 	right: 0
-		// 	width: 100%
-		// 	height: 100%
-		// 	background-color: #fff
-		// &::before
-		// 	transform: translateY(-6px) rotate(0deg)
-		// &::after
-		// 	transform: translateY(6px) rotate(0deg)
+		top: 50%
+		left: 50%
+		width: 20px
+		height: 2px
+		margin-left: -10px
+		margin-top: -1px
+		transition: all 0.2s
+	&__line-btn::before
+		content: ''
+		margin-top: -7px
+	&__line-btn::after
+		content: ''
+		margin-top: 5px
+		
+
+
+.main-mobile
+	display: block !important
+	position: fixed
+	top: 0
+	left: 0
+	right: 0
+	bottom: 0
+	width: 100%
+	height: 100%
+	background-color: #fff
+	margin: 0 !important
+	.main-nav__container
+		height: 100%
+	#top_menu
+		display: flex
+		flex-direction: column
+		justify-content: center
+		height: 100% !important
+	.nav-item
+		flex-grow: 0
+		.nav-link
+			display: block
+			padding: 1rem 0
+			font-size: 1.5rem
+			&:hover, &:active
+				background-color: $red
+				color: #fff
+		&.dropdown.show
+			background-color: #eee
+		.dropdown-menu
+			width: 200px
+			margin: 0 auto
+			left: 0
+			right: 0
+			text-align: center
+			.dropdown-item
+				font-size: 1.125rem
+				padding: 0.75rem 1rem

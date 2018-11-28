@@ -1,5 +1,20 @@
 $(function() {
 
+
+	$('#js-mobile-menu-btn').click(function(e) {
+		e.preventDefault();
+
+		$(this).toggleClass('mobile-menu-btn__link-active');
+		var menu = $('.main-nav');
+		
+		if ( menu.hasClass('main-mobile') ) {
+			menu.removeClass('main-mobile');
+		}
+		else {
+			menu.addClass('main-mobile');
+		}
+	});
+
 	function goMarginHeader() {
 		// Отступ от шапки основного контента
 		var mainHeader = $('.js-main-header').outerHeight();
@@ -123,6 +138,76 @@ $(function() {
 	// Код при изменение размера  страницы
 	$(window).resize(function() {
 		goMarginHeader();
+	});
+
+
+	 var mask_phone_option = {
+        onComplete: function (cep) {
+            $('div.confirm_sms').show("slow");
+        },
+        onChange: function (cep) {
+            var count = $('#phone').cleanVal().length;
+            if (count < 11) {
+                $('div.confirm_sms').hide("slow");
+                $('#confirm_phone').val("");
+            }
+        }
+    };
+    $('#phone').mask('+0000-000-00-00', mask_phone_option, {placeholder: "+7 (800)-800-80-80"});
+    $('#checkPhoneModal').on('show.bs.modal', function () {
+        odoo.define('drnow.activate_phone', function (require) {
+            'use strict';
+            var ajax = require('web.ajax');
+            ajax.jsonRpc('/ajax/activate_phone', 'call', {
+                'phone': $('#phone').cleanVal(),
+            }).always(function (result) {
+                var data = JSON.parse(result);
+                if ('error' in data){
+                	$('#checkPhoneModal .invalid-feedback').text(
+                		data.error.message
+					).show("slow");
+				}
+            });
+        });
+    });
+    $('#checkPhoneModal').on('hide.bs.modal', function (e) {
+		debugger;
+    	$('#checkPhoneModal .invalid-feedback').text("").hide();
+    	$('#ConfirmActivateCode').attr('disabled','');
+    	$('#sms_code').val("");
+    });
+    $("#sms_code").keyup(function(){
+    	if (($(this).val().length) === 5){
+    		$('#ConfirmActivateCode').removeAttr('disabled');
+		} else {
+    		$('#ConfirmActivateCode').attr('disabled','');
+		}
+    });
+	$('#ConfirmActivateCode').on( "click", function() {
+		if($('#sms_code').length !== 5){
+            odoo.define('drnow.check_activate_code', function (require) {
+                'use strict';
+                var ajax = require('web.ajax');
+                ajax.jsonRpc('/ajax/check_activate_code', 'call', {
+                    'phone': $('#phone').cleanVal(),
+                    'code': $('#sms_code').val()
+                }).always(function (result) {
+                    var data = JSON.parse(result);
+                    // Если код активации совпадает
+                    if (data.error === 0 ){
+                    	$('#checkPhoneModal').modal('hide'); //скрываем форму
+						$('#confirm_phone').val("True"); // телефон подтвержден
+						$('div.confirm_sms').hide(); // скрываем ссылку на подтверждения
+						$('div.field-phone #phone').attr('readonly',''); //readonly номер
+						$('div.field-phone .valid-feedback').show("slow");
+					} else {
+                        $('#checkPhoneModal .invalid-feedback').text(
+                            data.message
+                        ).show("slow");
+					}
+                });
+            });
+		}
 	});
 
 

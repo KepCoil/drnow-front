@@ -149,6 +149,7 @@
 	&__footer
 		justify-content: space-between
 
+
 .card-doctor
 	&__header
 		display: flex
@@ -168,7 +169,8 @@
 		&-doc
 			color: $light
 			font-size: 1rem
-	
+
+
 .calendar-price
 	&__header
 		margin-bottom: 5rem
@@ -200,7 +202,6 @@
 		margin-bottom: 5rem
 		display: flex
 		width: 100%
-
 		&-left
 			border-right: 1px solid #ddd
 			padding-right: 2rem
@@ -210,6 +211,7 @@
 			padding-left: 2rem
 			flex: 0 0 80%
 			max-width: 80%
+
 	&__date
 		display: flex
 		align-items: center
@@ -231,6 +233,8 @@
 				margin-right: 5px
 				&::after
 					content: ','
+					display: inline-block
+
 	&__info
 		&-row
 			margin: 0
@@ -245,19 +249,16 @@
 				margin-bottom: 0
 				border-bottom: 0
 				padding-bottom: 0
-		
 		&-col
 			padding: 0
-		&-price
-
 		&-btn
 			color: #fff
 			margin-right: 0.75rem
-			mb
 			&:last-child
 				margin-right: 0
 			&-audio
-				background-color: $green
+				background-color: $green	
 			&-video
 				background-color: $blue
-			
+			&-icon
+				margin-right: 0.25rem

@@ -13,8 +13,8 @@
 					</a>
 				</div>
 
-				<div class="mobile-menu-btn clearfix d-md-none d-lg-none d-xl-none">
-					<a class="mobile-menu-btn__link clearfix" href="#">
+				<div class="mobile-menu-btn d-md-none d-lg-none d-xl-none">
+					<a id="js-mobile-menu-btn" class="mobile-menu-btn__link" href="#">
 						<span class="mobile-menu-btn__line-btn"></span>
 					</a>
 				</div>
