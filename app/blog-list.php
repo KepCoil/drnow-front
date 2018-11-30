@@ -9,7 +9,7 @@
 		<div class="blog-list">
 			<div class="container">
 
-				<h2 class="main-content-layour-inner-page__main-title">Докторский блог</h2>
+				<h2 class="main-page-title">Докторский блог</h2>
 				
 
 				<div class="row blog-list__row">

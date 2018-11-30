@@ -7,7 +7,6 @@ html {
 body {
   position: relative;
   min-width: 320px;
-  overflow-x: hidden;
   opacity: 1;
   background-color: #fff;
   color: #212529;
@@ -35,29 +34,31 @@ h1, h2, h3, h4, h5, h6,
   font-weight: 500; }
 
 h1, .h1 {
-  font-size: 2.5rem;
-  margin: 3rem 0 1rem 0; }
+  font-size: 2.5rem; }
 
 h2, .h2 {
-  color: #dc3545;
   font-size: 2.25rem;
-  margin: 2.5rem 0 1rem 0; }
+  margin: 1.5rem 0 1rem 0; }
+
+h2.main-page-title {
+  color: #dc3545;
+  margin: 0 0 2rem 0; }
 
 h3, .h3 {
   font-size: 1.75rem;
-  margin: 2.25rem 0 1rem 0; }
+  margin: 1.5rem 0 1rem 0; }
 
 h4, .h4 {
   font-size: 1.5rem;
-  margin: 2rem 0 1rem 0; }
+  margin: 1.25rem 0 1rem 0; }
 
 h5, .h5 {
   font-size: 1.25rem;
-  margin: 1.5rem 0 1rem 0; }
+  margin: 1rem 0 1rem 0; }
 
 h6, .h6 {
   font-size: 1.125rem;
-  margin: 1.25rem 0 1rem 0; }
+  margin: 0.5rem 0 1rem 0; }
 
 ul, ol {
   margin: 0.5rem 0 1.5rem 0;
@@ -243,6 +244,7 @@ footer#main-footer {
   z-index: 5; }
   .mobile-menu-btn__link {
     display: block;
+    border: none;
     width: 45px;
     height: 45px;
     background-color: #dc3545;
@@ -549,6 +551,10 @@ footer#main-footer {
   top: 0;
   left: 0;
   z-index: 0; }
+  .path-arrows__arrow-img-wrap svg {
+    width: 100%;
+    height: auto;
+    overflow: visible !important; }
 
 .key-doctors__slider {
   display: -webkit-box;
@@ -972,13 +978,23 @@ footer#main-footer {
   margin-right: 0 !important; }
   .buttons-doctors__btn {
     margin-right: 1rem;
-    color: #fff; }
+    color: #fff;
+    text-decoration: none; }
+    .buttons-doctors__btn:hover {
+      color: #fff;
+      text-decoration: none; }
     .buttons-doctors__btn-attendant {
       background-color: #dc3545; }
+      .buttons-doctors__btn-attendant:hover {
+        background-color: #bd2130; }
     .buttons-doctors__btn-consultation {
       background-color: #236094; }
+      .buttons-doctors__btn-consultation:hover {
+        background-color: #1e5280; }
     .buttons-doctors__btn-write {
       background-color: #2e7d32; }
+      .buttons-doctors__btn-write:hover {
+        background-color: #246328; }
     .buttons-doctors__btn:last-child {
       margin-right: 0; }
     .buttons-doctors__btn-icon {
@@ -988,8 +1004,8 @@ footer#main-footer {
       background-color: #6c757d;
       border-color: #6c757d; }
       .buttons-doctors__btn-close:hover, .buttons-doctors__btn-close:focus, .buttons-doctors__btn-close:active {
-        background-color: #6c757d;
-        border-color: #6c757d; }
+        background-color: #545b62;
+        border-color: #545b62; }
 
 .modal-doctors__title {
   color: #dc3545;
@@ -1096,14 +1112,21 @@ footer#main-footer {
       -ms-flex-align: center;
           align-items: center; }
   .calendar-price__date-number {
+    width: 4.2rem;
+    height: 3.75rem;
     padding: 0.25em 0.4em;
     background-color: #dc3545;
     color: #fff;
     font-size: 2rem;
+    line-height: auto;
     font-weight: 700;
     -webkit-border-radius: 0.5rem;
             border-radius: 0.5rem;
-    margin-right: 0.75rem; }
+    margin-right: 0.75rem;
+    text-align: center;
+    vertical-align: middle; }
+    .calendar-price__date-number-text {
+      display: inline-block; }
   .calendar-price__date-detail-weekday {
     margin-bottom: 0.1rem; }
   .calendar-price__date-detail-month-year {
@@ -1139,13 +1162,21 @@ footer#main-footer {
 
 .calendar-price__info-btn {
   color: #fff;
-  margin-right: 0.75rem; }
+  margin-right: 0.75rem;
+  text-decoration: none; }
+  .calendar-price__info-btn:hover {
+    color: #fff;
+    text-decoration: none; }
   .calendar-price__info-btn:last-child {
     margin-right: 0; }
   .calendar-price__info-btn-audio {
     background-color: #2e7d32; }
+    .calendar-price__info-btn-audio:hover {
+      background-color: #246328; }
   .calendar-price__info-btn-video {
-    background-color: #19456b; }
+    background-color: #236094; }
+    .calendar-price__info-btn-video:hover {
+      background-color: #1e5280; }
   .calendar-price__info-btn-icon {
     margin-right: 0.25rem; }
 
@@ -1352,8 +1383,11 @@ footer#main-footer {
   .doctors-list__nav {
     margin-bottom: 15px; }
     .doctors-list__nav-list {
-      height: 150px;
+      height: 15.625rem;
       overflow-y: scroll; }
+    .doctors-list__nav-link {
+      font-size: 1.125rem;
+      padding: 0.625rem 0.5rem; }
   .calendar-price__item {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;

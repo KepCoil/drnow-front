@@ -10,7 +10,7 @@
 			<div class="sidebar-page">
 				<div class="doctors-list">
 
-					<h2 class="main-content-layour-inner-page__main-title">Наши доктора</h2>
+					<h2 class="main-page-title">Наши доктора</h2>
 
 					<div class="row sidebar-page__row">
 
@@ -159,9 +159,9 @@
 												<div class="doctors-list__doc">Хирург</div>
 												<div class="doctors-list__text">Кандидат медицинских наук. Врач высшей квалификационной категории. Стаж работы - 24 года.</div>
 												<div class="doctors-list__btn buttons-doctors">
-													<button class="btn buttons-doctors__btn buttons-doctors__btn-attendant"><i class="buttons-doctors__btn-icon fas fa-ambulance"></i>Дежурный</button>
-													<button class="btn buttons-doctors__btn buttons-doctors__btn-consultation"><i class="buttons-doctors__btn-icon fas fa-user-md"></i>Консультация</button>
-													<button class="btn buttons-doctors__btn buttons-doctors__btn-write"><i class="buttons-doctors__btn-icon fas fa-comments"></i>Написать</button>
+													<a href="#" class="btn buttons-doctors__btn buttons-doctors__btn-attendant"><i class="buttons-doctors__btn-icon fas fa-ambulance"></i>Дежурный</a>
+													<a href="#" class="btn buttons-doctors__btn buttons-doctors__btn-consultation"><i class="buttons-doctors__btn-icon fas fa-user-md"></i>Консультация</a>
+													<a href="#" class="btn buttons-doctors__btn buttons-doctors__btn-write"><i class="buttons-doctors__btn-icon fas fa-comments"></i>Написать</a>
 												</div>
 											</div>
 										</div>

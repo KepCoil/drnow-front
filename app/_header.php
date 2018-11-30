@@ -14,9 +14,9 @@
 				</div>
 
 				<div class="mobile-menu-btn d-md-none d-lg-none d-xl-none">
-					<a id="js-mobile-menu-btn" class="mobile-menu-btn__link" href="#">
+					<button class="js-mmenu-btn mobile-menu-btn__link">
 						<span class="mobile-menu-btn__line-btn"></span>
-					</a>
+					</button>
 				</div>
 			</div>
 

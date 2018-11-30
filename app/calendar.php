@@ -8,7 +8,7 @@
 			<div class="calendar-price">
 
 				<div class="calendar-price__header">
-					<h2 class="calendar-price__header-title">Консультация у доктора</h2>
+					<h2 class="main-page-title">Консультация у доктора</h2>
 
 					<div class="calendar-price__header-container">
 						<div class="calendar-price__header-left">
@@ -30,7 +30,9 @@
 					<div class="calendar-price__item calendar-price__item">
 						<div class="calendar-price__item-left">
 							<div class="calendar-price__date">
-								<div class="calendar-price__date-number">25</div>
+								<div class="calendar-price__date-number">
+									<span class="calendar-price__date-number-text">1</span>
+								</div>
 								<div class="calendar-price__date-detail">
 									<div class="calendar-price__date-detail-weekday">Понедельник</div>
 									<div class="calendar-price__date-detail-month-year">
@@ -53,18 +55,18 @@
 								</div>
 								<div class="col calendar-price__info-col">
 									<div class="calendar-price__info-audio">
-										<button class="btn calendar-price__info-btn calendar-price__info-btn-audio">
+										<a href="#"class="btn calendar-price__info-btn calendar-price__info-btn-audio">
 											<i class="fas fa-volume-up calendar-price__info-btn-icon"></i>
 											<span class="calendar-price__info-btn-numb">1200</span>
-										</button>
+										</a>
 									</div>
 								</div>
 								<div class="col calendar-price__info-col">
 									<div class="calendar-price__info-video">
-										<button class="btn calendar-price__info-btn calendar-price__info-btn-video">
+										<a href="#"class="btn calendar-price__info-btn calendar-price__info-btn-video">
 											<i class="fas fa-video calendar-price__info-btn-icon"></i>
 											<span class="calendar-price__info-btn-numb">1500</span>
-										</button>
+										</a>
 									</div>
 								</div>
 							</div>
@@ -75,18 +77,18 @@
 								</div>
 								<div class="col calendar-price__info-col">
 									<div class="calendar-price__info-audio">
-										<button class="btn calendar-price__info-btn calendar-price__info-btn-audio">
+										<a href="#"class="btn calendar-price__info-btn calendar-price__info-btn-audio">
 											<i class="fas fa-volume-up calendar-price__info-btn-icon"></i>
 											<span class="calendar-price__info-btn-numb">1100</span>
-										</button>
+										</a>
 									</div>
 								</div>
 								<div class="col calendar-price__info-col">
 									<div class="calendar-price__info-video">
-										<button class="btn calendar-price__info-btn calendar-price__info-btn-video">
+										<a href="#"class="btn calendar-price__info-btn calendar-price__info-btn-video">
 											<i class="fas fa-video calendar-price__info-btn-icon"></i>
 											<span class="calendar-price__info-btn-numb">2500</span>
-										</button>
+										</a>
 									</div>
 								</div>
 							</div>
@@ -97,18 +99,18 @@
 								</div>
 								<div class="col calendar-price__info-col">
 									<div class="calendar-price__info-audio">
-										<button class="btn calendar-price__info-btn calendar-price__info-btn-audio">
+										<a href="#"class="btn calendar-price__info-btn calendar-price__info-btn-audio">
 											<i class="fas fa-volume-up calendar-price__info-btn-icon"></i>
 											<span class="calendar-price__info-btn-numb">800</span>
-										</button>
+										</a>
 									</div>
 								</div>
 								<div class="col calendar-price__info-col">
 									<div class="calendar-price__info-video">
-										<button class="btn calendar-price__info-btn calendar-price__info-btn-video">
+										<a href="#"class="btn calendar-price__info-btn calendar-price__info-btn-video">
 											<i class="fas fa-video calendar-price__info-btn-icon"></i>
 											<span class="calendar-price__info-btn-numb">1200</span>
-										</button>
+										</a>
 									</div>
 								</div>
 							</div>
@@ -119,7 +121,9 @@
 					<div class="calendar-price__item calendar-price__item">
 						<div class="calendar-price__item-left">
 							<div class="calendar-price__date">
-								<div class="calendar-price__date-number">27</div>
+								<div class="calendar-price__date-number">
+									<span class="calendar-price__date-number-text">17</span>
+								</div>
 								<div class="calendar-price__date-detail">
 									<div class="calendar-price__date-detail-weekday">Среда</div>
 									<div class="calendar-price__date-detail-month-year">
@@ -142,18 +146,18 @@
 								</div>
 								<div class="col calendar-price__info-col">
 									<div class="calendar-price__info-audio">
-										<button class="btn calendar-price__info-btn calendar-price__info-btn-audio">
+										<a href="#"class="btn calendar-price__info-btn calendar-price__info-btn-audio">
 											<i class="fas fa-volume-up calendar-price__info-btn-icon"></i>
 											<span class="calendar-price__info-btn-numb">1200</span>
-										</button>
+										</a>
 									</div>
 								</div>
 								<div class="col calendar-price__info-col">
 									<div class="calendar-price__info-video">
-										<button class="btn calendar-price__info-btn calendar-price__info-btn-video">
+										<a href="#"class="btn calendar-price__info-btn calendar-price__info-btn-video">
 											<i class="fas fa-video calendar-price__info-btn-icon"></i>
 											<span class="calendar-price__info-btn-numb">1500</span>
-										</button>
+										</a>
 									</div>
 								</div>
 							</div>
@@ -164,18 +168,18 @@
 								</div>
 								<div class="col calendar-price__info-col">
 									<div class="calendar-price__info-audio">
-										<button class="btn calendar-price__info-btn calendar-price__info-btn-audio">
+										<a href="#"class="btn calendar-price__info-btn calendar-price__info-btn-audio">
 											<i class="fas fa-volume-up calendar-price__info-btn-icon"></i>
 											<span class="calendar-price__info-btn-numb">1100</span>
-										</button>
+										</a>
 									</div>
 								</div>
 								<div class="col calendar-price__info-col">
 									<div class="calendar-price__info-video">
-										<button class="btn calendar-price__info-btn calendar-price__info-btn-video">
+										<a href="#"class="btn calendar-price__info-btn calendar-price__info-btn-video">
 											<i class="fas fa-video calendar-price__info-btn-icon"></i>
 											<span class="calendar-price__info-btn-numb">2500</span>
-										</button>
+										</a>
 									</div>
 								</div>
 							</div>
@@ -187,7 +191,9 @@
 					<div class="calendar-price__item calendar-price__item">
 						<div class="calendar-price__item-left">
 							<div class="calendar-price__date">
-								<div class="calendar-price__date-number">31</div>
+								<div class="calendar-price__date-number">
+									<span class="calendar-price__date-number-text">31</span>
+								</div>
 								<div class="calendar-price__date-detail">
 									<div class="calendar-price__date-detail-weekday">Воскресенье</div>
 									<div class="calendar-price__date-detail-month-year">
@@ -210,18 +216,18 @@
 								</div>
 								<div class="col calendar-price__info-col">
 									<div class="calendar-price__info-audio">
-										<button class="btn calendar-price__info-btn calendar-price__info-btn-audio">
+										<a href="#"class="btn calendar-price__info-btn calendar-price__info-btn-audio">
 											<i class="fas fa-volume-up calendar-price__info-btn-icon"></i>
 											<span class="calendar-price__info-btn-numb">1200</span>
-										</button>
+										</a>
 									</div>
 								</div>
 								<div class="col calendar-price__info-col">
 									<div class="calendar-price__info-video">
-										<button class="btn calendar-price__info-btn calendar-price__info-btn-video">
+										<a href="#"class="btn calendar-price__info-btn calendar-price__info-btn-video">
 											<i class="fas fa-video calendar-price__info-btn-icon"></i>
 											<span class="calendar-price__info-btn-numb">1500</span>
-										</button>
+										</a>
 									</div>
 								</div>
 							</div>

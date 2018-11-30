@@ -1,7 +1,7 @@
 $(function() {
 
 
-	$('#js-mobile-menu-btn').click(function(e) {
+	$('.js-mmenu-btn').click(function(e) {
 		e.preventDefault();
 
 		$(this).toggleClass('mobile-menu-btn__link-active');
@@ -13,7 +13,9 @@ $(function() {
 		else {
 			menu.addClass('main-mobile');
 		}
+		
 	});
+	
 
 	function goMarginHeader() {
 		// Отступ от шапки основного контента
@@ -171,7 +173,6 @@ $(function() {
         });
     });
     $('#checkPhoneModal').on('hide.bs.modal', function (e) {
-		debugger;
     	$('#checkPhoneModal .invalid-feedback').text("").hide();
     	$('#ConfirmActivateCode').attr('disabled','');
     	$('#sms_code').val("");
